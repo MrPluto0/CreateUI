@@ -1,0 +1,107 @@
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-32[0].rules[0].use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-32[0].rules[0].use[2]!./node_modules/less-loader/dist/cjs.js??clonedRuleSet-32[0].rules[0].use[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./packages/toast/src/main.vue?vue&type=style&index=0&id=6a8eeda0&lang=less&scoped=true& ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.toast-wrapper[data-v-6a8eeda0] {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 999;
+  overflow: hidden;
+  background-color: #edf2fc;
+  border-radius: 5px;
+  border: #ebeef5 solid 1px;
+  padding: 10px 20px;
+  min-width: 380px;
+  left: 50%;
+  top: 20px;
+  transform: translate(-50%, 0%);
+  transition: opacity 0.3s, transform 0.4s, top 0.4s;
+}
+.toast-wrapper .toast-content[data-v-6a8eeda0] {
+  padding: 0;
+  font-size: 14px;
+  line-height: 1;
+  text-align: center;
+  width: 100%;
+}
+.toast-info .toast-content[data-v-6a8eeda0] {
+  color: #909399;
+}
+.toast-success[data-v-6a8eeda0] {
+  background-color: #f0f9eb;
+  border-color: #e1f3d8;
+}
+.toast-success .toast-content[data-v-6a8eeda0] {
+  color: #67c23a;
+}
+.toast-warning[data-v-6a8eeda0] {
+  background-color: #fdf6ec;
+  border-color: #faecd8;
+}
+.toast-warning .toast-content[data-v-6a8eeda0] {
+  color: #e6a23c;
+}
+.toast-error[data-v-6a8eeda0] {
+  background-color: #fef0f0;
+  border-color: #fde2e2;
+}
+.toast-error .toast-error .toast-content[data-v-6a8eeda0] {
+  color: #f56c6c;
+}
+.toast-fade-enter[data-v-6a8eeda0],
+.toast-fade-leave-to[data-v-6a8eeda0] {
+  opacity: 0;
+  transform: translate(-50%, -100%);
+}
+
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-32[0].rules[0].use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-32[0].rules[0].use[2]!./node_modules/less-loader/dist/cjs.js??clonedRuleSet-32[0].rules[0].use[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./packages/modal/src/main.vue?vue&type=style&index=0&id=a1d5a32c&lang=less&scoped=true& ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.modal-wrapper[data-v-a1d5a32c] {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 300px;
+  min-height: 150px;
+  z-index: 999;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  overflow: hidden;
+}
+.modal-wrapper p[data-v-a1d5a32c] {
+  margin: 30px;
+  text-align: center;
+}
+.modal-wrapper .btns[data-v-a1d5a32c] {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 0;
+}
+.modal-wrapper .btns button[data-v-a1d5a32c] {
+  width: 50%;
+  border-radius: 0;
+  outline: none;
+  border: none;
+  border-top: 1px solid silver;
+  padding: 5px 0;
+}
+.modal-wrapper .btns button[data-v-a1d5a32c]:active {
+  transform: scale(0.98);
+}
+.modal-wrapper .btns .confirm-btn[data-v-a1d5a32c] {
+  color: #3697fd;
+  border-right: 1px solid silver;
+}
+.modal-wrapper .btns .cancel-btn[data-v-a1d5a32c] {
+  color: #f56c6c;
+}
+.modal-fade-enter[data-v-a1d5a32c],
+.modal-fade-leave-to[data-v-a1d5a32c] {
+  opacity: 0;
+  transform: translate(-50%, -100%);
+}
+

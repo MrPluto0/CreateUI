@@ -1,0 +1,66 @@
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-32[0].rules[0].use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-32[0].rules[0].use[2]!./node_modules/less-loader/dist/cjs.js??clonedRuleSet-32[0].rules[0].use[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./packages/loading/src/loading.vue?vue&type=style&index=0&id=eee0a7ac&lang=less&scoped=true& ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.ct-loading[data-v-eee0a7ac] {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bgColor);
+}
+.ct-loading-box[data-v-eee0a7ac] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ct-loading-box .ct-loading-anime-normal[data-v-eee0a7ac] {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 5px solid rgba(189, 189, 189, 0.25);
+  border-left: 5px solid var(--spinnerColor);
+  border-top: 5px solid var(--spinnerColor);
+  -webkit-animation: rotate-data-v-eee0a7ac 1s infinite linear;
+          animation: rotate-data-v-eee0a7ac 1s infinite linear;
+}
+.ct-loading-box .ct-loading-anime-moon[data-v-eee0a7ac] {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border-left: 5px solid var(--spinnerColor);
+  border-top: 5px solid var(--spinnerColor);
+  -webkit-animation: rotate-data-v-eee0a7ac 1.5s infinite ease-in-out alternate;
+          animation: rotate-data-v-eee0a7ac 1.5s infinite ease-in-out alternate;
+}
+.ct-loading-box .ct-loading-spinner[data-v-eee0a7ac] {
+  color: var(--spinnerColor);
+  font-size: 30px;
+  -webkit-animation: rotate-data-v-eee0a7ac 1.5s infinite linear;
+          animation: rotate-data-v-eee0a7ac 1.5s infinite linear;
+}
+.ct-loading-box .ct-loading-title[data-v-eee0a7ac] {
+  margin-top: 10px;
+  color: var(--fontColor);
+}
+@-webkit-keyframes rotate-data-v-eee0a7ac {
+0% {
+    transform: rotate(0);
+}
+100% {
+    transform: rotate(360deg);
+}
+}
+@keyframes rotate-data-v-eee0a7ac {
+0% {
+    transform: rotate(0);
+}
+100% {
+    transform: rotate(360deg);
+}
+}
+
