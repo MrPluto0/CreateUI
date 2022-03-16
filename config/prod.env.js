@@ -2,7 +2,5 @@
 
 module.exports = {
   productionSourceMap: false,
-  configureWebpack: {
-    // plugins: [new BundleAnalyzer()],
-  },
+  configureWebpack: {},
 };

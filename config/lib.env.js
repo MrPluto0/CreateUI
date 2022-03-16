@@ -1,6 +1,8 @@
 const path = require("path");
 const fs = require("fs");
 const resolve = (dir) => path.join(__dirname, "../", dir);
+
+// double build for this plugin will cause port error
 // const BundleAnalyzer = require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 
 module.exports = {

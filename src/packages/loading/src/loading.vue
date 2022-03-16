@@ -12,11 +12,11 @@
       <div class="ct-loading-box">
         <div
           v-if="spinner === ''"
-          :class="'ct-loading-anime__' + animeStyle"
+          :class="'ct-loading-anime-' + animeStyle"
         ></div>
-        <div v-else class="ct-loading__spinner" :class="spinner"></div>
+        <div v-else class="ct-loading-spinner" :class="spinner"></div>
 
-        <div v-if="text !== ''" class="ct-loading__title">{{ text }}</div>
+        <div v-if="text !== ''" class="ct-loading-title">{{ text }}</div>
       </div>
     </div>
   </transition>
@@ -56,7 +56,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  .ct-loading-anime__normal {
+  .ct-loading-anime-normal {
     width: 25px;
     height: 25px;
     border-radius: 50%;
@@ -65,7 +65,7 @@ export default {
     border-top: 5px solid var(--spinnerColor);
     animation: rotate 1s infinite linear;
   }
-  .ct-loading-anime__moon {
+  .ct-loading-anime-moon {
     width: 25px;
     height: 25px;
     border-radius: 50%;
@@ -73,12 +73,12 @@ export default {
     border-top: 5px solid var(--spinnerColor);
     animation: rotate 1.5s infinite ease-in-out alternate;
   }
-  .ct-loading__spinner {
+  .ct-loading-spinner {
     color: var(--spinnerColor);
     font-size: 30px;
     animation: rotate 1.5s infinite linear;
   }
-  .ct-loading__title {
+  .ct-loading-title {
     margin-top: 10px;
     color: var(--fontColor);
   }

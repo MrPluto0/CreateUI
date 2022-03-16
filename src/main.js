@@ -1,11 +1,8 @@
 import Vue from "vue";
 import App from "./App.vue";
 
-// import CreateUI from "../packages";
-// Vue.use(CreateUI);
-
-import Chatbox from "../lib/chatbox";
-Vue.use(Chatbox);
+import CreateUI from "packages";
+Vue.use(CreateUI);
 
 Vue.config.productionTip = false;
 

@@ -1,7 +1,7 @@
 <template>
   <transition name="modal-fade">
     <div v-if="isShow" class="modal-wrapper">
-      <p class="modal-content">{{ content }}</p>
+      <p>{{ content }}</p>
       <div class="btns">
         <button class="confirm-btn" @click="clickHandler('confirm')">
           确定
@@ -20,14 +20,17 @@ export default {
       isShow: true,
       content: "",
       success: null,
+      fail: null,
     };
   },
   methods: {
     clickHandler(type) {
-      this.isShow = false;
-      if (type === "confirm") {
-        typeof this.success === "function" && this.success();
+      let res = { confirm: false };
+      if (type == "confirm") res.confirm = true;
+      if (typeof this.success === "function") {
+        this.success(res);
       }
+      this.isShow = false;
     },
   },
 };
