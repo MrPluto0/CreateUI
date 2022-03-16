@@ -3,6 +3,9 @@ import { createfactory } from "./utils/wrapper";
 
 const factory = createfactory(Toast);
 
+// global action for timers in this file
+jest.useFakeTimers();
+
 describe("Toast.vue", () => {
   it("render data.content when passed", () => {
     const data = {
@@ -43,8 +46,7 @@ describe("Toast.vue", () => {
     expect(wrapper.vm.closed).toBeFalsy();
 
     // Accelerate time / Time fast-forward
-    jest.useFakeTimers();
-    setTimeout(() => {}, data.duration);
+    setTimeout(() => {}, data.duration + 10);
     jest.runAllTimers();
 
     expect(wrapper.vm.closed).toBeTruthy();
