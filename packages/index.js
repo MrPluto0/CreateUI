@@ -1,18 +1,20 @@
 import Toast from "./toast";
 import Modal from "./modal";
+import Chatbox from "./chatbox";
+import Loading from "./loading";
+import loading from "./loading";
 
 // 组件列表
-const components = [];
+const components = [Chatbox];
 
-const requireComponents = require.context("./", true, /index\.js$/);
+/* The following can't work after bundle */
+// const requireComponents = require.context("", true, /index\.js$/);
+// requireComponents.keys().forEach((key) => {
+//   if (key !== "./index.js") components.push(requireComponents(key).default);
+// });
 
-requireComponents.keys().forEach((key) => {
-  if (key !== "./index.js") components.push(requireComponents(key).default);
-});
-
-//组件注册
+// register components
 const install = function (Vue) {
-  // 遍历并注册所有组件
   components.forEach((component) => {
     let hasName = !!component?.name;
     if (hasName) {
@@ -20,9 +22,13 @@ const install = function (Vue) {
     }
   });
 
-  // 服务注册
+  // directive
+  Vue.use(loading.directive);
+
+  // service
   Vue.prototype.$toast = Toast;
   Vue.prototype.$modal = Modal;
+  Vue.prototype.$loading = Loading.service;
 };
 
 if (typeof window !== "undefined" && window.Vue) {
@@ -33,4 +39,7 @@ if (typeof window !== "undefined" && window.Vue) {
 export default {
   install,
   ...components,
+  Toast,
+  Modal,
+  Loading,
 };

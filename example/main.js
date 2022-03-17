@@ -1,7 +1,7 @@
 import Vue from "vue";
 import App from "./App";
 
-import CreateUI from "packages";
+import CreateUI from "../lib";
 Vue.use(CreateUI);
 
 new Vue({

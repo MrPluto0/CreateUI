@@ -1,7 +1,10 @@
 {
-  "name": "test",
-  "version": "1.0.0",
-  "description": "",
+  "name": "@gypsophlia/create-ui",
+  "version": "1.0.1",
+  "author": {
+    "name": "Gypsophlia",
+    "url": "https://github.com/MrPluto0"
+  },
   "main": "lib/index.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack serve",
@@ -10,8 +13,6 @@
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
   },
-  "keywords": [],
-  "author": "",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.17.7",
@@ -45,5 +46,18 @@
     "webpack-bundle-analyzer": "^4.5.0",
     "webpack-cli": "^4.9.2",
     "webpack-dev-server": "^4.7.4"
+  },
+  "keywords": [
+    "UI",
+    "Components",
+    "Vue"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MrPluto0/CreateUI.git"
   }
 }
