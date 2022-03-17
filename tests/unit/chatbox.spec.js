@@ -1,4 +1,4 @@
-import Chatbox from "@/../packages/chatbox";
+import Chatbox from "packages/chatbox";
 import { createfactory } from "./utils/wrapper";
 
 const factory = createfactory(Chatbox);

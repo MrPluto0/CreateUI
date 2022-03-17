@@ -1,4 +1,4 @@
-import Toast from "@/../packages/toast/src/main.vue";
+import Toast from "packages/toast/src/main.vue";
 import { createfactory } from "./utils/wrapper";
 
 const factory = createfactory(Toast);

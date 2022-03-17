@@ -1,4 +1,4 @@
-import Modal from "@/../packages/modal/src/main.vue";
+import Modal from "packages/modal/src/main.vue";
 import Vue from "vue";
 import { createfactory } from "./utils/wrapper";
 

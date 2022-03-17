@@ -7,7 +7,7 @@ const components = [];
 const requireComponents = require.context("./", true, /index\.js$/);
 
 requireComponents.keys().forEach((key) => {
-  components.push(requireComponents(key).default);
+  if (key !== "./index.js") components.push(requireComponents(key).default);
 });
 
 //组件注册

@@ -1,4 +1,4 @@
-import Loading from "@/../packages/loading/src/loading.vue";
+import Loading from "packages/loading/src/loading.vue";
 import { createfactory } from "./utils/wrapper";
 
 const factory = createfactory(Loading);
