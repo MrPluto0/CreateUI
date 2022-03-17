@@ -10,6 +10,7 @@
 ## 组件
 
 - [x] Chatbox 聊天盒
+- [ ] Musicbox 音乐盒
 - [x] Toast 通知弹窗
 - [x] Modal 消息弹窗
 - [x] Loading 加载框
@@ -50,7 +51,6 @@ npm install babel-plugin-component -D
 Babel 配置
 
 ```json
-// babel.config.js
 plugins: [
   [
     "component",
@@ -75,8 +75,7 @@ npm install babel-plugin-import -D
 
 Babel 配置
 
-```
-// babel.config.js
+```json
 plugins: [
   [
     "import",

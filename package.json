@@ -1,6 +1,6 @@
 {
   "name": "@gypsophlia/create-ui",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "author": {
     "name": "Gypsophlia",
     "url": "https://github.com/MrPluto0"
@@ -10,6 +10,7 @@
     "dev": "cross-env NODE_ENV=development webpack serve",
     "build:lib": "cross-env NODE_ENV=lib webpack",
     "test": "jest",
+    "lint": "eslint packages/*",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
   },

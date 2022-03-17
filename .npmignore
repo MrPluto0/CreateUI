@@ -3,3 +3,4 @@ example
 tests
 node_modules
 config
+pnpm-lock.yaml

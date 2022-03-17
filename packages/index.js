@@ -2,7 +2,6 @@ import Toast from "./toast";
 import Modal from "./modal";
 import Chatbox from "./chatbox";
 import Loading from "./loading";
-import loading from "./loading";
 
 // 组件列表
 const components = [Chatbox];
@@ -23,7 +22,7 @@ const install = function (Vue) {
   });
 
   // directive
-  Vue.use(loading.directive);
+  Vue.use(Loading.directive);
 
   // service
   Vue.prototype.$toast = Toast;
