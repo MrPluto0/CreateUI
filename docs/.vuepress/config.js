@@ -1,4 +1,5 @@
 module.exports = {
+  base: "./",
   title: "CreateUI",
   head: [["link", { rel: "icon", href: "/logo.png" }]],
   themeConfig: {
