@@ -20,15 +20,15 @@ tags:
 <com-show>
   ```html
   <com-show>
-    <ct-chatbox :text="['Hello, John']"></ct-chatbox>
-    <ct-chatbox sent :text="['Hello']"></ct-chatbox>
-    <ct-chatbox :text="['Hello, How are you?']"></ct-chatbox>
+    <ct-chatbox :text="['早上好']"></ct-chatbox>
+    <ct-chatbox sent :text="['早上好呀']"></ct-chatbox>
+    <ct-chatbox :text="['祝你这一天过的愉快]"></ct-chatbox>
   </com-show>
   ```
   <template v-slot:show>
-    <ct-chatbox :text="['Hello, John']"></ct-chatbox>
-    <ct-chatbox sent :text="['Hello']"></ct-chatbox>
-    <ct-chatbox :text="['Hello, How are you?']"></ct-chatbox>
+    <ct-chatbox :text="['早上好']"></ct-chatbox>
+    <ct-chatbox sent :text="['早上好呀']"></ct-chatbox>
+    <ct-chatbox :text="['祝你这一天过的愉快']"></ct-chatbox>
   </template>
 </com-show>
 
@@ -36,39 +36,39 @@ tags:
 
 ### 昵称
 
-配置`name`来设置发送方的头像。
+配置`name`来设置发送方的昵称。
 
 <com-show>
   ```html
   <ct-chatbox
-    :text="['Hello, John']"
+    :text="['早上好呀']"
     name="Gypsophlia"
     avatar="https://avatars.githubusercontent.com/u/54534553?v=4"
   ></ct-chatbox>
   <ct-chatbox
     sent
-    :text="['Hello']"
+    :text="['嘿，早上好']"
     name="Gypsophlia"
     avatar="https://avatars.githubusercontent.com/u/54534553?v=4"
   ></ct-chatbox>
   <ct-chatbox
-    :text="['Hello, How are you?']"
+    :text="['祝你拥有愉快的一天！']"
     name="Gypsophlia"
     avatar="https://avatars.githubusercontent.com/u/54534553?v=4"
   ></ct-chatbox>
   ```
   <template v-slot:show>
     <ct-chatbox
-      :text="['Hello, John']"
+      :text="['早上好呀']"
       name="Gypsophlia"
     ></ct-chatbox>
     <ct-chatbox 
       sent 
-      :text="['Hello']"
+      :text="['嘿，早上好']"
       name="Gypsophlia"
     ></ct-chatbox>
     <ct-chatbox
-      :text="['Hello, How are you?']"
+      :text="['祝你拥有愉快的一天！']"
       name="Gypsophlia"
     ></ct-chatbox>
   </template>
@@ -81,31 +81,31 @@ tags:
 <com-show>
   ```html
   <ct-chatbox
-    :text="['Hello, John']"
+    :text="['早上好呀']"
     avatar="https://avatars.githubusercontent.com/u/54534553?v=4"
   ></ct-chatbox>
   <ct-chatbox
     sent
-    :text="['Hello']"
+    :text="['嘿，早上好']"
     avatar="https://avatars.githubusercontent.com/u/54534553?v=4"
   ></ct-chatbox>
   <ct-chatbox
-    :text="['Hello, How are you?']"
+    :text="['祝你拥有愉快的一天！']"
     avatar="https://avatars.githubusercontent.com/u/54534553?v=4"
   ></ct-chatbox>
   ```
   <template v-slot:show>  
     <ct-chatbox
-      :text="['Hello, John']"
+      :text="['早上好呀']"
       avatar="https://avatars.githubusercontent.com/u/54534553?v=4"
     ></ct-chatbox>
     <ct-chatbox
       sent
-      :text="['Hello']"
+      :text="['嘿，早上好']"
       avatar="https://avatars.githubusercontent.com/u/54534553?v=4"
     ></ct-chatbox>
     <ct-chatbox
-      :text="['Hello, How are you?']"
+      :text="['祝你拥有愉快的一天！']"
       avatar="https://avatars.githubusercontent.com/u/54534553?v=4"
     ></ct-chatbox>
   </template>
@@ -117,22 +117,22 @@ tags:
 
 <com-show>
   ```html
-  <ct-chatbox :text="['Hello, John']" stamp="3 minutes ago"></ct-chatbox>
-  <ct-chatbox sent :text="['Hello']" stamp="4 minutes ago"></ct-chatbox>
-  <ct-chatbox :text="['Hello, How are you?']" stamp="4 minutes ago"></ct-chatbox>
+  <ct-chatbox :text="['早上好呀']" stamp="3 minutes ago"></ct-chatbox>
+  <ct-chatbox sent :text="['嘿，早上好']" stamp="4 minutes ago"></ct-chatbox>
+  <ct-chatbox :text="['祝你拥有愉快的一天！']" stamp="4 minutes ago"></ct-chatbox>
   ```
   <template v-slot:show>  
     <ct-chatbox
-      :text="['Hello, John']"
+      :text="['早上好呀']"
       stamp="3 minutes ago"
     ></ct-chatbox>
     <ct-chatbox
       sent
-      :text="['Hello']"
+      :text="['嘿，早上好']"
       stamp="4 minutes ago"
     ></ct-chatbox>
     <ct-chatbox
-      :text="['Hello, How are you?']"
+      :text="['祝你拥有愉快的一天！']"
       stamp="4 minutes ago"
     ></ct-chatbox>
   </template>
@@ -145,7 +145,7 @@ tags:
 <com-show>
   ```html
   <ct-chatbox
-    :text="['Hello, John']"
+    :text="['早上好呀']"
     name="Gypsophlia"
     stamp="3 minutes ago"
     avatar="https://avatars.githubusercontent.com/u/54534553?v=4"
@@ -153,14 +153,14 @@ tags:
   ></ct-chatbox>
   <ct-chatbox
     sent
-    :text="['Hello']"
+    :text="['嘿，早上好']"
     name="Gypsophlia"
     stamp="4 minutes ago"
     avatar="https://avatars.githubusercontent.com/u/54534553?v=4"
     bgColor="#ecb959"
   ></ct-chatbox>
   <ct-chatbox
-    :text="['Hello, How are you?']"
+    :text="['祝你拥有愉快的一天！']"
     name="Gypsophlia"
     stamp="4 minutes ago"
     avatar="https://avatars.githubusercontent.com/u/54534553?v=4"
@@ -169,7 +169,7 @@ tags:
   ```
   <template v-slot:show>  
     <ct-chatbox
-      :text="['Hello, John']"
+      :text="['早上好呀']"
       name="Gypsophlia"
       stamp="3 minutes ago"
       avatar="https://avatars.githubusercontent.com/u/54534553?v=4"
@@ -177,14 +177,14 @@ tags:
     ></ct-chatbox>
     <ct-chatbox
       sent
-      :text="['Hello']"
+      :text="['嘿，早上好']"
       name="Gypsophlia"
       stamp="4 minutes ago"
       avatar="https://avatars.githubusercontent.com/u/54534553?v=4"
       bgColor="#ecb959"
     ></ct-chatbox>
     <ct-chatbox
-      :text="['Hello, How are you?']"
+      :text="['祝你拥有愉快的一天！']"
       name="Gypsophlia"
       stamp="4 minutes ago"
       avatar="https://avatars.githubusercontent.com/u/54534553?v=4"
@@ -199,26 +199,45 @@ tags:
 
 <com-show>
   ```html
-  <ct-chatbox :text="['Hello, John']"></ct-chatbox>
-  <ct-chatbox sent :text="['Hi, Jim', 'How are you?']"></ct-chatbox>
-  <ct-chatbox :text="['I am fine.', 'What about you?']"></ct-chatbox>
-  <ct-chatbox sent :text="['I am OK, too.', 'Thanks!']"></ct-chatbox>
+  <ct-chatbox :text="['早上好呀']"></ct-chatbox>
+  <ct-chatbox sent :text="[
+    '早上好呀', 
+    '如果我见不到你的话',
+    '那就祝你中午好，晚上好，并且晚安'
+    ]"></ct-chatbox>
+  <ct-chatbox :text="['哈哈，好的']"></ct-chatbox>
   ```
   <template v-slot:show>
-    <ct-chatbox
-      :text="['Hello, John']"
-    ></ct-chatbox>
-    <ct-chatbox
-      sent
-      :text="['Hi, Jim', 'How are you?']"
-    ></ct-chatbox>
-    <ct-chatbox
-      :text="['I am fine.', 'What about you?']"
-    ></ct-chatbox>
-    <ct-chatbox
-      sent
-      :text="['I am OK, too.', 'Thanks!']"
-    ></ct-chatbox>
+    <ct-chatbox :text="['早上好呀']"></ct-chatbox>
+    <ct-chatbox sent :text="[
+      '早上好呀', 
+      '如果我见不到你的话',
+      '那就祝你中午好，晚上好，并且晚安'
+      ]"></ct-chatbox>
+    <ct-chatbox :text="['哈哈，好的']"></ct-chatbox>
+  </template>
+</com-show>
+
+### 气泡宽度
+
+配置`width`属性设置气泡宽度。
+
+<com-show>
+  ```html
+  <ct-chatbox :width="400" :text="[
+    '谁让你读了这么多书，又知道了双水村以外还有个大世界……如果从小你就在这个天地里日出而作，日落而息，那你现在就会和众乡亲抱同一理想： \
+    经过几年的辛劳，像大哥一样娶个满意的媳妇，生个胖儿子，加上你的体魄，会成为一名出色的庄稼人。不幸的是，你知道的太多了，思考的太多了，\
+    因此才有了这种不能为周围人所理解的苦恼。'
+  ]"></ct-chatbox>
+  <ct-chatbox sent :text="['而我认为这种苦恼并不是一种不幸。']"></ct-chatbox>
+  ```
+  <template v-slot:show>
+    <ct-chatbox :width="400" :text="[
+      '谁让你读了这么多书，又知道了双水村以外还有个大世界……如果从小你就在这个天地里日出而作，日落而息，那你现在就会和众乡亲抱同一理想：\
+      经过几年的辛劳，像大哥一样娶个满意的媳妇，生个胖儿子，加上你的体魄，会成为一名出色的庄稼人。不幸的是，你知道的太多了，思考的太多了，\
+      因此才有了这种不能为周围人所理解的苦恼。'
+    ]"></ct-chatbox>
+    <ct-chatbox sent :text="['而我认为这种苦恼并不是一种不幸。']"></ct-chatbox>
   </template>
 </com-show>
 
@@ -226,11 +245,12 @@ tags:
 
 ### 属性
 
-| 参数    | 信息       | 默认  | 必需  |  类型   |
-| ------- | ---------- | :---: | :---: | :-----: |
-| text    | 消息文本   |  ——   | true  |  Array  |
-| name    | 发送者昵称 |  ——   | false | String  |
-| avatar  | 发送者头像 |  ——   | false | String  |
-| stamp   | 时间戳     |  ——   | false | String  |
-| bgColor | 背景颜色   |  ——   | false | String  |
-| sent    | 发送方向   | false | false | Boolean |
+| 参数    | 信息       |  默认   | 必需  |  类型   |
+| ------- | ---------- | :-----: | :---: | :-----: |
+| text    | 消息文本   |   ——    | true  |  Array  |
+| name    | 发送者昵称 |   ——    | false | String  |
+| avatar  | 发送者头像 |   ——    | false | String  |
+| stamp   | 时间戳     |   ——    | false | String  |
+| bgColor | 背景颜色   |   ——    | false | String  |
+| width   | 气泡宽度   | 300(px) | false | Number  |
+| sent    | 发送方向   |  false  | false | Boolean |

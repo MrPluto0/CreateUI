@@ -1,4 +1,4 @@
-.toast-wrapper[data-v-6a8eeda0] {
+.ct-toast-wrapper {
   display: flex;
   align-items: center;
   position: fixed;
@@ -14,44 +14,44 @@
   transform: translate(-50%, 0%);
   transition: opacity 0.3s, transform 0.4s, top 0.4s;
 }
-.toast-wrapper .toast-content[data-v-6a8eeda0] {
+.ct-toast-wrapper .ct-toast-content {
   padding: 0;
   font-size: 14px;
   line-height: 1;
   text-align: center;
   width: 100%;
 }
-.toast-info .toast-content[data-v-6a8eeda0] {
+.ct-toast-info .ct-toast-content {
   color: #909399;
 }
-.toast-success[data-v-6a8eeda0] {
+.ct-toast-success {
   background-color: #f0f9eb;
   border-color: #e1f3d8;
 }
-.toast-success .toast-content[data-v-6a8eeda0] {
+.ct-toast-success .ct-toast-content {
   color: #67c23a;
 }
-.toast-warning[data-v-6a8eeda0] {
+.ct-toast-warning {
   background-color: #fdf6ec;
   border-color: #faecd8;
 }
-.toast-warning .toast-content[data-v-6a8eeda0] {
+.ct-toast-warning .ct-toast-content {
   color: #e6a23c;
 }
-.toast-error[data-v-6a8eeda0] {
+.ct-toast-error {
   background-color: #fef0f0;
   border-color: #fde2e2;
 }
-.toast-error .toast-error .toast-content[data-v-6a8eeda0] {
+.ct-toast-error .toast-error .ct-toast-content {
   color: #f56c6c;
 }
-.toast-fade-enter[data-v-6a8eeda0],
-.toast-fade-leave-to[data-v-6a8eeda0] {
+.toast-fade-enter,
+.toast-fade-leave-to {
   opacity: 0;
   transform: translate(-50%, -100%);
 }
 
-.modal-wrapper[data-v-a1d5a32c] {
+.ct-modal-wrapper {
   position: fixed;
   left: 50%;
   top: 50%;
@@ -64,18 +64,18 @@
   border-radius: 20px;
   overflow: hidden;
 }
-.modal-wrapper p[data-v-a1d5a32c] {
+.ct-modal-wrapper p {
   margin: 30px;
   text-align: center;
 }
-.modal-wrapper .btns[data-v-a1d5a32c] {
+.ct-modal-wrapper .ct-modal-btns {
   width: 100%;
   display: flex;
   justify-content: space-around;
   position: absolute;
   bottom: 0;
 }
-.modal-wrapper .btns button[data-v-a1d5a32c] {
+.ct-modal-wrapper .ct-modal-btns button {
   width: 50%;
   border-radius: 0;
   outline: none;
@@ -83,54 +83,58 @@
   border-top: 1px solid silver;
   padding: 5px 0;
 }
-.modal-wrapper .btns button[data-v-a1d5a32c]:active {
+.ct-modal-wrapper .ct-modal-btns button:active {
   transform: scale(0.98);
 }
-.modal-wrapper .btns .confirm-btn[data-v-a1d5a32c] {
+.ct-modal-wrapper .ct-modal-btns .ct-modal-confirm-btn {
   color: #3697fd;
   border-right: 1px solid silver;
 }
-.modal-wrapper .btns .cancel-btn[data-v-a1d5a32c] {
+.ct-modal-wrapper .ct-modal-btns .ct-modal-cancel-btn {
   color: #f56c6c;
 }
-.modal-fade-enter[data-v-a1d5a32c],
-.modal-fade-leave-to[data-v-a1d5a32c] {
+.modal-fade-enter,
+.modal-fade-leave-to {
   opacity: 0;
   transform: translate(-50%, -100%);
 }
 
-.ct-chatbox[data-v-2c4a1464] {
+.ct-chatbox {
   --bg-color: #dde3e7;
+  --max-width: 300px;
   display: flex;
 }
-.ct-chatbox__outer[data-v-2c4a1464] {
+.ct-chatbox__outer {
   display: flex;
 }
-.ct-chatbox__outer .ct-chatbox__avatar img[data-v-2c4a1464] {
-  max-width: 60px;
+.ct-chatbox__outer .ct-chatbox__avatar img {
+  max-width: 50px !important;
   border-radius: 50%;
 }
-.ct-chatbox__inner .ct-chatbox__name[data-v-2c4a1464] {
+.ct-chatbox__inner .ct-chatbox__name {
   font-size: 12px;
   margin-bottom: 10px;
 }
-.ct-chatbox__inner .ct-chatbox__main[data-v-2c4a1464] {
+.ct-chatbox__inner .ct-chatbox__main {
+  max-width: var(--max-width);
+  word-break: break-all;
+  width: fit-content;
   position: relative;
   border-radius: 5px;
   padding: 10px;
   background-color: var(--bg-color);
 }
-.ct-chatbox__inner .ct-chatbox__main .ct-chatbox__stamp[data-v-2c4a1464] {
+.ct-chatbox__inner .ct-chatbox__main .ct-chatbox__stamp {
   margin-top: 10px;
   font-size: 12px;
 }
-.ct-chatbox__inner .ct-chatbox__main[data-v-2c4a1464]:not(.ct-chatbox__inner .ct-chatbox__main:last-of-type) {
+.ct-chatbox__inner .ct-chatbox__main:not(.ct-chatbox__inner .ct-chatbox__main:last-of-type) {
   margin-bottom: 10px;
 }
-.ct-chatbox__left .ct-chatbox__outer .ct-chatbox__avatar[data-v-2c4a1464] {
+.ct-chatbox__left .ct-chatbox__outer .ct-chatbox__avatar {
   margin-right: 15px;
 }
-.ct-chatbox__left .ct-chatbox__first[data-v-2c4a1464]::before {
+.ct-chatbox__left .ct-chatbox__first::before {
   content: "";
   position: absolute;
   left: -20px;
@@ -139,16 +143,16 @@
   border-top-color: transparent;
   border-bottom-color: transparent;
 }
-.ct-chatbox__right[data-v-2c4a1464] {
+.ct-chatbox__right {
   flex-direction: row-reverse;
 }
-.ct-chatbox__right .ct-chatbox__outer[data-v-2c4a1464] {
+.ct-chatbox__right .ct-chatbox__outer {
   flex-direction: row-reverse;
 }
-.ct-chatbox__right .ct-chatbox__outer .ct-chatbox__avatar[data-v-2c4a1464] {
+.ct-chatbox__right .ct-chatbox__outer .ct-chatbox__avatar {
   margin-left: 15px;
 }
-.ct-chatbox__right .ct-chatbox__first[data-v-2c4a1464]::after {
+.ct-chatbox__right .ct-chatbox__first::after {
   content: "";
   position: absolute;
   top: 15px;
@@ -159,7 +163,7 @@
   border-bottom-color: transparent;
 }
 
-.ct-loading[data-v-eee0a7ac] {
+.ct-loading {
   position: absolute;
   left: 0;
   right: 0;
@@ -171,43 +175,43 @@
   align-items: center;
   background-color: var(--bgColor);
 }
-.ct-loading-box[data-v-eee0a7ac] {
+.ct-loading-box {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.ct-loading-box .ct-loading-anime__normal[data-v-eee0a7ac] {
+.ct-loading-box .ct-loading-anime__normal {
   width: 25px;
   height: 25px;
   border-radius: 50%;
   border: 5px solid rgba(189, 189, 189, 0.25);
   border-left: 5px solid var(--spinnerColor);
   border-top: 5px solid var(--spinnerColor);
-  animation: rotate-data-v-eee0a7ac 1s infinite linear;
+  animation: rotate 1s infinite linear;
 }
-.ct-loading-box .ct-loading-anime__moon[data-v-eee0a7ac] {
+.ct-loading-box .ct-loading-anime__moon {
   width: 25px;
   height: 25px;
   border-radius: 50%;
   border-left: 5px solid var(--spinnerColor);
   border-top: 5px solid var(--spinnerColor);
-  animation: rotate-data-v-eee0a7ac 1.5s infinite ease-in-out alternate;
+  animation: rotate 1.5s infinite ease-in-out alternate;
 }
-.ct-loading-box .ct-loading__spinner[data-v-eee0a7ac] {
+.ct-loading-box .ct-loading__spinner {
   color: var(--spinnerColor);
   font-size: 30px;
-  animation: rotate-data-v-eee0a7ac 1.5s infinite linear;
+  animation: rotate 1.5s infinite linear;
 }
-.ct-loading-box .ct-loading__title[data-v-eee0a7ac] {
+.ct-loading-box .ct-loading__title {
   margin-top: 10px;
   color: var(--fontColor);
 }
-@keyframes rotate-data-v-eee0a7ac {
-0% {
+@keyframes rotate {
+  0% {
     transform: rotate(0);
-}
-100% {
+  }
+  100% {
     transform: rotate(360deg);
-}
+  }
 }
 

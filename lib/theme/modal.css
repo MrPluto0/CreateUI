@@ -1,4 +1,4 @@
-.modal-wrapper[data-v-a1d5a32c] {
+.ct-modal-wrapper {
   position: fixed;
   left: 50%;
   top: 50%;
@@ -11,18 +11,18 @@
   border-radius: 20px;
   overflow: hidden;
 }
-.modal-wrapper p[data-v-a1d5a32c] {
+.ct-modal-wrapper p {
   margin: 30px;
   text-align: center;
 }
-.modal-wrapper .btns[data-v-a1d5a32c] {
+.ct-modal-wrapper .ct-modal-btns {
   width: 100%;
   display: flex;
   justify-content: space-around;
   position: absolute;
   bottom: 0;
 }
-.modal-wrapper .btns button[data-v-a1d5a32c] {
+.ct-modal-wrapper .ct-modal-btns button {
   width: 50%;
   border-radius: 0;
   outline: none;
@@ -30,18 +30,18 @@
   border-top: 1px solid silver;
   padding: 5px 0;
 }
-.modal-wrapper .btns button[data-v-a1d5a32c]:active {
+.ct-modal-wrapper .ct-modal-btns button:active {
   transform: scale(0.98);
 }
-.modal-wrapper .btns .confirm-btn[data-v-a1d5a32c] {
+.ct-modal-wrapper .ct-modal-btns .ct-modal-confirm-btn {
   color: #3697fd;
   border-right: 1px solid silver;
 }
-.modal-wrapper .btns .cancel-btn[data-v-a1d5a32c] {
+.ct-modal-wrapper .ct-modal-btns .ct-modal-cancel-btn {
   color: #f56c6c;
 }
-.modal-fade-enter[data-v-a1d5a32c],
-.modal-fade-leave-to[data-v-a1d5a32c] {
+.modal-fade-enter,
+.modal-fade-leave-to {
   opacity: 0;
   transform: translate(-50%, -100%);
 }

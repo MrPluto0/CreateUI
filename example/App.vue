@@ -2,7 +2,7 @@
   <div>
     <ct-chatbox
       sent
-      :text="['Hello']"
+      :text="['Hello', '1123', 'aaaaaaaaaaaaaaaaaaa']"
       name="Gypsophlia"
       avatar="https://avatars.githubusercontent.com/u/54534553?v=4"
     ></ct-chatbox>

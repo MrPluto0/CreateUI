@@ -58,7 +58,7 @@ export default {
 .content__show,
 .content__code {
   max-width: 740px;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease;
 }
 .topbar {
   display: flex;
@@ -77,9 +77,11 @@ export default {
 .fade-left-enter,
 .fade-left-leave-to {
   transform: translateX(-100%);
+  height: 0;
 }
 .fade-right-enter,
 .fade-right-leave-to {
   transform: translateX(100%);
+  height: 0;
 }
 </style>

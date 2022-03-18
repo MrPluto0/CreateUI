@@ -56,6 +56,9 @@ module.exports = {
     ],
   },
   resolve: {
+    alias: {
+      packages: resolve(__dirname, "../packages"),
+    },
     extensions: ["", ".js", ".vue"],
   },
   plugins: [
@@ -77,13 +80,22 @@ function getComponentEntries(dir) {
     const filepath = path.join(dir, file);
     const isDir = fs.statSync(resolve(filepath)).isDirectory();
     const [name, suffix] = file.split(".");
+    let temp;
 
+    // parse filepath
     if (isDir) {
-      entries[name] = resolve(path.join(filepath, "index.js"));
-    } else if (suffix === "js") {
-      entries[name] = resolve(filepath);
+      temp = resolve(path.join(filepath, "index.js"));
+    } else if (name === "index" && suffix === "js") {
+      temp = resolve(filepath);
+    }
+
+    // check file existence
+    try {
+      fs.accessSync(temp, fs.constants.F_OK);
+      entries[name] = temp;
+    } catch (error) {
+      console.log(`[Warning] File donesn't exist: ${temp}`);
     }
   });
-
   return entries;
 }

@@ -2,7 +2,7 @@
   <div
     class="ct-chatbox"
     :class="sent ? 'ct-chatbox__left' : 'ct-chatbox__right'"
-    :style="{ '--bg-color': bgColorCopy }"
+    :style="{ '--bg-color': bgColorCopy, '--max-width': width + 'px' }"
   >
     <div class="ct-chatbox__outer">
       <div class="ct-chatbox__avatar" v-if="avatar">
@@ -30,6 +30,8 @@
 </template>
 
 <script>
+import "../../theme/chatbox.less";
+
 export default {
   name: "CtChatbox",
   props: {
@@ -56,6 +58,10 @@ export default {
       type: String,
       default: undefined,
     },
+    width: {
+      type: Number,
+      default: 300,
+    },
   },
   data() {
     return {
@@ -70,77 +76,3 @@ export default {
   },
 };
 </script>
-
-<style lang="less" scoped>
-.ct-chatbox {
-  --bg-color: #dde3e7;
-  display: flex;
-}
-
-.ct-chatbox__outer {
-  display: flex;
-  .ct-chatbox__avatar {
-    img {
-      max-width: 60px;
-      border-radius: 50%;
-    }
-  }
-}
-
-.ct-chatbox__inner {
-  .ct-chatbox__name {
-    font-size: 12px;
-    margin-bottom: 10px;
-  }
-  .ct-chatbox__main {
-    position: relative;
-    border-radius: 5px;
-    padding: 10px;
-    background-color: var(--bg-color);
-    .ct-chatbox__stamp {
-      margin-top: 10px;
-      font-size: 12px;
-    }
-    &:not(&:last-of-type) {
-      margin-bottom: 10px;
-    }
-  }
-}
-
-.ct-chatbox__left {
-  .ct-chatbox__outer {
-    .ct-chatbox__avatar {
-      margin-right: 15px;
-    }
-  }
-  .ct-chatbox__first::before {
-    content: "";
-    position: absolute;
-    left: -20px;
-    border: 10px solid var(--bg-color);
-    border-left-color: transparent;
-    border-top-color: transparent;
-    border-bottom-color: transparent;
-  }
-}
-
-.ct-chatbox__right {
-  flex-direction: row-reverse;
-  .ct-chatbox__outer {
-    flex-direction: row-reverse;
-    .ct-chatbox__avatar {
-      margin-left: 15px;
-    }
-  }
-  .ct-chatbox__first::after {
-    content: "";
-    position: absolute;
-    top: 15px;
-    right: -20px;
-    border: 10px solid var(--bg-color);
-    border-right-color: transparent;
-    border-top-color: transparent;
-    border-bottom-color: transparent;
-  }
-}
-</style>

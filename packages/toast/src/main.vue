@@ -2,16 +2,18 @@
   <transition name="toast-fade">
     <div
       v-if="!closed"
-      class="toast-wrapper"
-      :class="'toast-' + type"
+      class="ct-toast-wrapper"
+      :class="'ct-toast-' + type"
       :style="{ top: offset + 'px' }"
     >
-      <p class="toast-content">{{ content }}</p>
+      <p class="ct-toast-content">{{ content }}</p>
     </div>
   </transition>
 </template>
 
 <script>
+import "../../theme/toast.less";
+
 export default {
   name: "ct-toast",
   data() {
@@ -43,68 +45,3 @@ export default {
   },
 };
 </script>
-
-<style lang="less" scoped>
-.toast-wrapper {
-  display: flex;
-  align-items: center;
-  position: fixed;
-  z-index: 999;
-  overflow: hidden;
-  background-color: #edf2fc;
-  border-radius: 5px;
-  border: #ebeef5 solid 1px;
-  padding: 10px 20px;
-  min-width: 380px;
-  left: 50%;
-  top: 20px;
-  transform: translate(-50%, 0%);
-  transition: opacity 0.3s, transform 0.4s, top 0.4s;
-
-  .toast-content {
-    padding: 0;
-    font-size: 14px;
-    line-height: 1;
-    text-align: center;
-    width: 100%;
-  }
-}
-
-.toast-info .toast-content {
-  color: #909399;
-}
-
-.toast-success {
-  background-color: #f0f9eb;
-  border-color: #e1f3d8;
-
-  .toast-content {
-    color: #67c23a;
-  }
-}
-
-.toast-warning {
-  background-color: #fdf6ec;
-  border-color: #faecd8;
-
-  .toast-content {
-    color: #e6a23c;
-  }
-}
-
-.toast-error {
-  background-color: #fef0f0;
-  border-color: #fde2e2;
-
-  .toast-error .toast-content {
-    color: #f56c6c;
-  }
-}
-
-.toast-fade-enter,
-.toast-fade-leave-to {
-  opacity: 0;
-  transform: translate(-50%, -100%);
-  // transform: translateX(-50%) translateY(-100%);
-}
-</style>

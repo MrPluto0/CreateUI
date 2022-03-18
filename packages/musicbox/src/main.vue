@@ -2,7 +2,7 @@
  * @Descripttion: 
  * @Author: Gypsophlia
  * @Date: 2021-11-16 23:53:53
- * @LastEditTime: 2022-03-17 22:46:47
+ * @LastEditTime: 2022-03-18 22:53:20
 -->
 <template>
   <div>
@@ -13,7 +13,7 @@
       @ended="ended"
       :src="src"
     ></audio>
-    <div class="music-wrapper" :style="{ '--main-color': color }">
+    <div class="ct-music-wrapper" :style="{ '--main-color': color }">
       <div class="btn">
         <i
           class="iconfont"
@@ -21,16 +21,21 @@
           @click="togglePlay"
         ></i>
       </div>
-      <div class="process-wrapper">
-        <div class="name">{{ musicName }}</div>
-        <div class="process-fill" :style="{ width: sildePercent + '%' }"></div>
-        <div class="process"></div>
+      <div class="ct-music-process-wrapper">
+        <div class="ct-music__name">{{ musicName }}</div>
+        <div
+          class="ct-music__process-fill"
+          :style="{ width: sildePercent + '%' }"
+        ></div>
+        <div class="ct-music__process"></div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import "../../theme/musicbox.less";
+
 export default {
   name: "CtMusicbox",
   model: {
@@ -146,52 +151,3 @@ export default {
   },
 };
 </script>
-
-<style src="../assets/css/iconfont.css"></style>
-<style lang="less" scoped>
-.music-wrapper {
-  // 默认值
-  --main-color: #b42b51;
-
-  display: flex;
-  border: 3px solid rgba(255, 255, 255, 0.3);
-  background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 3px;
-  padding: 5px 10px;
-  .btn {
-    cursor: pointer;
-    .iconfont {
-      font-size: 30px;
-      color: var(--main-color);
-    }
-  }
-  .process-wrapper {
-    margin: 0 10px;
-    position: relative;
-    .name {
-      font-size: 15px;
-    }
-    .process-fill {
-      z-index: 99;
-      border-top: 4px solid var(--main-color);
-      position: absolute;
-      margin-top: 5px;
-      // width: 50%;
-      &::after {
-        content: "";
-        position: absolute;
-        right: 0;
-        top: -6px;
-        height: 8px;
-        width: 8px;
-        border-radius: 50%;
-        background-color: var(--main-color);
-      }
-    }
-    .process {
-      border-top: 4px solid black;
-      margin-top: 5px;
-    }
-  }
-}
-</style>
