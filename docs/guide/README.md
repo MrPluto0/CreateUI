@@ -1,24 +1,30 @@
-# CreateUI 组件库
+---
+sidebar: auto
+---
+
+# 指南
+
+通过指南，你将明白该组件库的特性，及使用方式。
 
 ## 功能
 
-- [x] 全局加载
-- [x] 按需加载
-- [ ] 国际化配置
-- [ ] 样例网站
-
-## 组件
-
-- [x] Chatbox 畅聊气泡
-- [x] Loading 加载动画
-- [x] Toast 消息提示框
-- [x] Modal 模态对话框
-- [ ] Musicbox 八音盒
+- 全局加载
+- 按需加载
+- 国际化配置
+- 样例网站
 
 ## 安装
 
+- npm
+
 ```
 npm install @gypsophlia/create-ui -S
+```
+
+- yarn
+
+```
+yarn add @gypsophlia/create-ui -S
 ```
 
 ## 用法
@@ -38,11 +44,11 @@ import { Chatbox } from "@gypsophlia/create-ui";
 Vue.use(Chatbox);
 ```
 
-## 按需引入配置
+## 配置
 
-### `babel-plugin-component`
+按需引入的项目需要安装如下任意一个插件，进行配置
 
-安装插件
+- `babel-plugin-component`
 
 ```
 npm install babel-plugin-component -D
@@ -65,9 +71,7 @@ plugins: [
 ]
 ```
 
-### `babel-plugin-import`
-
-安装插件
+- `babel-plugin-import`
 
 ```
 npm install babel-plugin-import -D
@@ -87,12 +91,13 @@ plugins: [
 ]
 ```
 
-> 或将以下配置写入`vue.config.js`中的 `configureWebpack`中
+::: tip
+以下配置写入`webpack.config.js`或`vue.config.js`中的 `configureWebpack`中
+:::
 
-Webpack 配置
+Webpack 配置，以支持`.css`后缀
 
 ```js
-// webpack.config.js
 resolve: {
   extensions: [".css"];
 }

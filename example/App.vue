@@ -1,6 +1,11 @@
 <template>
   <div>
-    <ct-chatbox :text="[text]" sent></ct-chatbox>
+    <ct-chatbox
+      sent
+      :text="['Hello']"
+      name="Gypsophlia"
+      avatar="https://avatars.githubusercontent.com/u/54534553?v=4"
+    ></ct-chatbox>
   </div>
 </template>
 
