@@ -2,7 +2,7 @@
  * @Descripttion: 
  * @Author: Gypsophlia
  * @Date: 2021-11-16 23:53:53
- * @LastEditTime: 2022-03-18 22:53:20
+ * @LastEditTime: 2022-03-19 14:53:46
 -->
 <template>
   <div>
@@ -14,7 +14,7 @@
       :src="src"
     ></audio>
     <div class="ct-music-wrapper" :style="{ '--main-color': color }">
-      <div class="btn">
+      <div class="ct-music-btn">
         <i
           class="iconfont"
           :class="isPlay ? 'icon-zanting' : 'icon-shipinbofangshibofang'"
@@ -22,7 +22,7 @@
         ></i>
       </div>
       <div class="ct-music-process-wrapper">
-        <div class="ct-music__name">{{ musicName }}</div>
+        <div class="ct-music__name">{{ name }}</div>
         <div
           class="ct-music__process-fill"
           :style="{ width: sildePercent + '%' }"
@@ -47,7 +47,7 @@ export default {
       required: true,
       type: null,
     },
-    musicName: {
+    name: {
       default: "Your Music Name",
       type: String,
     },
@@ -72,12 +72,11 @@ export default {
   },
 
   mounted() {
-    if (this.$refs) this.audio = this.$refs.audio;
+    this.audio = this.$refs.audio;
     // check if context is in suspended state (autoplay policy)
-    // 继续被Context中止的音乐
-    if (this.audioCtx && this.audioCtx.state === "suspended") {
-      this.audioCtx.resume();
-    }
+    // if (this.audioCtx && this.audioCtx.state === "suspended") {
+    //   this.audioCtx.resume();
+    // }
     this.audio.play();
   },
 

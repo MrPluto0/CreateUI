@@ -36,6 +36,7 @@ export default {
   name: "CtChatbox",
   props: {
     text: {
+      required: true,
       type: Array,
     },
     sent: {

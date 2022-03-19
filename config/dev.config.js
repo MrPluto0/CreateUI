@@ -37,7 +37,14 @@ module.exports = {
         test: /\.(jpe?g|png|gif)$/i,
         loader: "url-loader",
         options: {
-          limit: 10240,
+          limit: 10 * 1024,
+        },
+      },
+      {
+        test: /\.(mp3|mp4|ogg)$/,
+        loader: "url-loader",
+        options: {
+          limit: 10 * 1024,
         },
       },
       {

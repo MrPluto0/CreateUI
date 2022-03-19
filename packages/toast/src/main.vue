@@ -1,5 +1,5 @@
 <template>
-  <transition name="toast-fade">
+  <transition name="fade-vertical" appear>
     <div
       v-if="!closed"
       class="ct-toast-wrapper"

@@ -2,9 +2,10 @@ import Toast from "./toast";
 import Modal from "./modal";
 import Chatbox from "./chatbox";
 import Loading from "./loading";
+import Musicbox from "./musicbox";
 
 // 组件列表
-const components = [Chatbox];
+const components = [Chatbox, Musicbox];
 
 /* The following can't work after bundle */
 // const requireComponents = require.context("", true, /index\.js$/);
@@ -33,7 +34,6 @@ const install = function (Vue) {
 if (typeof window !== "undefined" && window.Vue) {
   install(window.Vue);
 }
-
 //导出全局install
 export default {
   install,

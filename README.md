@@ -4,8 +4,8 @@
 
 - [x] 全局加载
 - [x] 按需加载
+- [x] [介绍网站](https://mrpluto0.github.io/CreateUI/)
 - [ ] 国际化配置
-- [ ] 样例网站
 
 ## 组件
 
@@ -13,7 +13,7 @@
 - [x] Loading 加载动画
 - [x] Toast 消息提示框
 - [x] Modal 模态对话框
-- [ ] Musicbox 八音盒
+- [x] Musicbox 八音盒
 
 ## 安装
 
@@ -50,19 +50,19 @@ npm install babel-plugin-component -D
 
 Babel 配置
 
-```json
+```js
 plugins: [
   [
     "component",
     {
-      "libraryName": "@gypsophlia/create-ui",
-      "styleLibrary": {
-        "name": "theme",
-        "base": false
-      }
-    }
-  ]
-]
+      libraryName: "@gypsophlia/create-ui",
+      styleLibrary: {
+        name: "theme",
+        base: false,
+      },
+    },
+  ],
+];
 ```
 
 ### `babel-plugin-import`
@@ -75,16 +75,16 @@ npm install babel-plugin-import -D
 
 Babel 配置
 
-```json
+```js
 plugins: [
   [
     "import",
     {
-      "libraryName": "@gypsophlia/create-ui",
-      "styleLibraryDirectory": "lib/theme"
-    }
-  ]
-]
+      libraryName: "@gypsophlia/create-ui",
+      styleLibraryDirectory: "lib/theme",
+    },
+  ],
+];
 ```
 
 > 或将以下配置写入`vue.config.js`中的 `configureWebpack`中

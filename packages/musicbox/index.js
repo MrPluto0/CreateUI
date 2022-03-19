@@ -1,9 +1,7 @@
 import Musicbox from "./src/main";
 
-const components = {
-  install(Vue) {
-    Vue.component(Musicbox.name, Musicbox);
-  },
+Musicbox.install = function (Vue) {
+  Vue.component(Musicbox.name, Musicbox);
 };
 
-export default components;
+export default Musicbox;

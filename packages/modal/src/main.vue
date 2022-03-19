@@ -1,14 +1,23 @@
 <template>
-  <transition name="modal-fade">
-    <div v-if="isShow" class="ct-modal-wrapper">
-      <p class="ct-modal-content">{{ content }}</p>
-      <div class="ct-modal-btns">
-        <button class="ct-modal-confirm-btn" @click="clickHandler('confirm')">
-          确定
-        </button>
-        <button class="ct-modal-cancel-btn" @click="clickHandler('cancel')">
-          取消
-        </button>
+  <transition name="fade-vertical" appear>
+    <div v-if="isShow" class="ct-bg-mask">
+      <div class="ct-modal-wrapper">
+        <div class="ct-modal-main">
+          <div class="ct-modal-title">
+            {{ title }}
+          </div>
+          <div class="ct-modal-content" :class="'ct-create__align-' + align">
+            {{ content }}
+          </div>
+        </div>
+        <div class="ct-modal-btns">
+          <button class="ct-modal-confirm-btn" @click="clickHandler('confirm')">
+            确定
+          </button>
+          <button class="ct-modal-cancel-btn" @click="clickHandler('cancel')">
+            取消
+          </button>
+        </div>
       </div>
     </div>
   </transition>
@@ -22,7 +31,9 @@ export default {
   data() {
     return {
       isShow: true,
-      content: "",
+      title: "标题",
+      content: "这是一段自定义内容",
+      align: "center",
       success: null,
     };
   },
