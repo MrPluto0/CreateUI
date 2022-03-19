@@ -12,4 +12,4 @@ git add -A
 git commit -m 'deploy'
 
 # git push -f将本地的代码库推送到远端，并覆盖
-git push -f https://github.com/MrPluto0/CreateUI.git gh-pages
+git push -f https://github.com/MrPluto0/CreateUI.git master:gh-pages
