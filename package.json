@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "docs:dev": "vuepress dev docs",
+    "docs:dev": "vuepress dev docs --temp temp",
     "docs:build": "vuepress build docs",
     "deploy": "bash scripts/deploy.sh",
     "sync": "bash scripts/sync.sh"
@@ -23,6 +23,6 @@
     "vuepress": "^1.9.7"
   },
   "dependencies": {
-    "@gypsophlia/create-ui": "^1.0.4"
+    "@gypsophlia/create-ui": "^1.1.4"
   }
 }

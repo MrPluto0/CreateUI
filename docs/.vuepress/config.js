@@ -17,10 +17,7 @@ module.exports = {
         ],
         sidebar: {
           "/components/": [
-            {
-              title: "介绍",
-              path: "",
-            },
+            ["", "介绍"],
             {
               title: "畅聊气泡",
               path: "chatbox",
@@ -49,8 +46,8 @@ module.exports = {
         label: "English",
         nav: [
           { text: "Home", link: "/" },
-          { text: "Guide", link: "/guide" },
-          { text: "Components", link: "/components" },
+          { text: "Guide", link: "/en/guide/" },
+          { text: "Components", link: "/en/components/" },
         ],
       },
     },

@@ -1,11 +1,11 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@gypsophlia/create-ui': ^1.0.4
+  '@gypsophlia/create-ui': ^1.1.4
   vuepress: ^1.9.7
 
 dependencies:
-  '@gypsophlia/create-ui': 1.0.4
+  '@gypsophlia/create-ui': 1.1.4
 
 devDependencies:
   vuepress: 1.9.7
@@ -1197,8 +1197,8 @@ packages:
       to-fast-properties: mirrors.tencent.com/to-fast-properties/2.0.0
     dev: true
 
-  /@gypsophlia/create-ui/1.0.4:
-    resolution: {integrity: sha512-xVc7S+nsZL/VHgtNc906Jj5XnX1GEYewa7kdoCt8kqsemMvF8jIAwq+MKVI1fnJm1P/bDMz17yb59opCAaL2Vw==}
+  /@gypsophlia/create-ui/1.1.4:
+    resolution: {integrity: sha512-DcjBmtD5Xhr/08ewArqlOHPRvXpjvI727NtFZP4CO98c/hGjud4ByHyid7avKAHiBaWiuiU9sGbgUsVm2gfC7A==}
     dev: false
 
   /@jridgewell/resolve-uri/3.0.5:
