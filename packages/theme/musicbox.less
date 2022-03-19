@@ -3,12 +3,16 @@
 .ct-music-wrapper {
   // 默认值
   --main-color: #b42b51;
+  --min-width: 100px;
+  --bg-color: #efefef;
 
   display: flex;
-  border: 3px solid rgba(255, 255, 255, 0.3);
-  background-color: rgba(255, 255, 255, 0.3);
+  border: 3px solid var(--main-color);
+  background-color: var(--bg-color);
   border-radius: 3px;
   padding: 5px 10px;
+  width: fit-content;
+
   .ct-music-btn {
     cursor: pointer;
     .iconfont {
@@ -17,8 +21,10 @@
     }
   }
   .ct-music-process-wrapper {
-    margin: 0 10px;
+    margin: 0 5px 0 15px;
     position: relative;
+    min-width: var(--min-width);
+
     .ct-music__name {
       font-size: 15px;
     }

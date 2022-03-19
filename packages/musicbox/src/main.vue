@@ -2,18 +2,25 @@
  * @Descripttion: 
  * @Author: Gypsophlia
  * @Date: 2021-11-16 23:53:53
- * @LastEditTime: 2022-03-19 14:53:46
+ * @LastEditTime: 2022-03-19 21:23:52
 -->
 <template>
   <div>
     <audio
-      ref="audio"
+      :ref="refer"
       id="audio"
       @timeupdate="updateTime"
       @ended="ended"
       :src="src"
     ></audio>
-    <div class="ct-music-wrapper" :style="{ '--main-color': color }">
+    <div
+      class="ct-music-wrapper"
+      :style="{
+        '--main-color': color,
+        '--min-width': width + 'px',
+        '--bg-color': bgColor,
+      }"
+    >
       <div class="ct-music-btn">
         <i
           class="iconfont"
@@ -55,15 +62,25 @@ export default {
       default: "#b42b51",
       type: String,
     },
+    bgColor: {
+      default: "#efefef",
+      type: String,
+    },
     isPlay: {
-      default: true,
+      default: false,
       type: Boolean,
+    },
+    refer: {
+      default: "audio",
+      type: String,
+    },
+    width: {
+      default: 100,
     },
   },
 
   data() {
     return {
-      // isPlay: true,
       sildePercent: 0,
       audio: null,
       audioCtx: null,
@@ -72,34 +89,19 @@ export default {
   },
 
   mounted() {
-    this.audio = this.$refs.audio;
-    // check if context is in suspended state (autoplay policy)
-    // if (this.audioCtx && this.audioCtx.state === "suspended") {
-    //   this.audioCtx.resume();
-    // }
-    this.audio.play();
+    this.audio = this.$refs[this.refer];
   },
 
   methods: {
     togglePlay() {
-      // 继续被Context中止的音乐
-      if (this.audioCtx.state === "suspended") {
+      if (this.audioCtx && this.audioCtx.state === "suspended") {
         this.audioCtx.resume();
-      }
-      if (!this.isPlay) {
-        this.audio.play();
-        // console.log("play");
-      } else {
-        this.audio.pause();
-        // console.log("pause");
       }
       this.$emit("input", !this.isPlay);
     },
 
     // 更新进度条
     updateTime(e) {
-      // console.log(this.audio.duration);
-      // console.log(e.target.currentTime);
       this.sildePercent = parseInt(
         (e.target.currentTime / this.audio.duration) * 100
       );
@@ -114,13 +116,16 @@ export default {
 
     // 获取上下文
     getAudioCtx() {
+      this.audioCtx = new (window.AudioContext || window.webkitAudioContext)();
       return this.audioCtx;
     },
 
     // 获取Web Audio Api - Analyser
     getAudioAnalyser() {
-      this.audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-
+      if (!this.audioCtx) {
+        this.audioCtx = new (window.AudioContext ||
+          window.webkitAudioContext)();
+      }
       let { audioCtx } = this;
       const analyser = audioCtx.createAnalyser();
       const audioElement = document.getElementById("audio");
@@ -130,18 +135,12 @@ export default {
       this.source.connect(analyser);
       analyser.connect(audioCtx.destination);
 
-      // 继续被Context中止的音乐
-      if (audioCtx.state === "suspended") {
-        audioCtx.resume();
-      }
-
       return analyser;
     },
   },
   watch: {
     isPlay(newval) {
-      // 继续被Context中止的音乐
-      if (this.audioCtx.state === "suspended") {
+      if (this.audioCtx && this.audioCtx.state === "suspended") {
         this.audioCtx.resume();
       }
       if (newval) this.audio.play();

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="background-color: #efefef">
     <ct-chatbox
       sent
       :text="['Hello', '1123', '123']"
@@ -12,8 +12,11 @@
     ></div>
     <ct-musicbox
       name="你的月亮"
-      :src="require('./assets/gypsophlia.mp3')"
-      :isPlay="isPlay"
+      src="./assets/gypsophila.mp3"
+      v-model="isPlay"
+      refer="audioxx"
+      ref="musicbox"
+      autoplay
     ></ct-musicbox>
     <button @click="toastTest">toast测试</button>
     <button @click="modalTest">modal测试</button>
@@ -27,8 +30,14 @@ export default {
     return {
       text: "123",
       loading: false,
-      isPlay: true,
+      isPlay: false,
+      musicbox: null,
     };
+  },
+  mounted() {
+    this.musicbox = this.$refs["musicbox"];
+    let an = this.musicbox.getAudioAnalyser();
+    console.log(an);
   },
   methods: {
     toastTest() {

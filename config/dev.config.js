@@ -1,9 +1,11 @@
 const { VueLoaderPlugin } = require("vue-loader");
 const { resolve } = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   mode: "development",
+  devtool: "source-map",
   entry: resolve(__dirname, "../example/main.js"),
   output: {
     path: resolve(__dirname, "../dist"),
@@ -59,10 +61,19 @@ module.exports = {
       template: resolve(__dirname, "../example/index.html"),
       filename: "index.html",
     }),
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: resolve(__dirname, "../example/assets"),
+          to: resolve(__dirname, "../dist/assets"),
+        },
+      ],
+    }),
   ],
   resolve: {
     alias: {
       packages: resolve(__dirname, "../packages"),
+      "@": resolve(__dirname, "../example"),
     },
     extensions: [".js", ".vue", ".json"],
   },
