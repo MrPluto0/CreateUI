@@ -8,7 +8,8 @@
     ></ct-chatbox>
     <div
       style="height: 200px; width: 200px; background-color: skyblue"
-      v-loading.fullscreen="loading"
+      v-loading="loading"
+      ref="loading"
     ></div>
     <ct-musicbox
       name="你的月亮"
@@ -20,7 +21,8 @@
     ></ct-musicbox>
     <button @click="toastTest">toast测试</button>
     <button @click="modalTest">modal测试</button>
-    <button @click="loadingTest">loading测试</button>
+    <button @click="loadingTest1">loading测试1</button>
+    <button @click="loadingTest2">loading测试2</button>
   </div>
 </template>
 
@@ -65,14 +67,17 @@ export default {
         },
       });
     },
-    loadingTest() {
+    loadingTest1() {
       // this.loading = !this.loading;
       let instance = this.$loading({
-        fullscreen: true,
+        target: this.$refs.loading,
       });
       setTimeout(() => {
         instance.close();
       }, 2000);
+    },
+    loadingTest2() {
+      this.loading = !this.loading;
     },
   },
 };

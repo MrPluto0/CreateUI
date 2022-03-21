@@ -41,7 +41,10 @@ export default {
         if (el.style.position === "") {
           el.style.position = "relative";
         }
-
+        // support for fixed position
+        if (el.style.transform === "") {
+          el.style.transform = "scale(1)";
+        }
         binding.value && toggleLoading(el, binding);
       },
       update: function (el, binding) {
@@ -50,7 +53,8 @@ export default {
         }
       },
       unbind: function (el) {
-        el.mask.parentNode.removeChild(el.mask);
+        el.removeChild && el.removeChild(el.mask);
+        // el.mask.parentNode && el.mask.parentNode.removeChild(el.mask);
         el.instance && el.instance.$destroy();
       },
     });

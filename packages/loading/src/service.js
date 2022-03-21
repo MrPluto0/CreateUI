@@ -38,6 +38,10 @@ export default function Loading(options = {}) {
     if (parent.style.position === "") {
       parent.style.position = "relative";
     }
+    // support for fixed position
+    if (parent.style.transform === "") {
+      parent.style.transform = "scale(1)";
+    }
     parent.appendChild(instance.$el);
   });
 
