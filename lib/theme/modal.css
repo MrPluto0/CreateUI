@@ -1,11 +1,18 @@
 .fade-vertical-enter,
 .fade-vertical-leave-to {
-  opacity: 0;
   transform: translateY(-100%);
 }
 .fade-vertical-enter-active,
 .fade-vertical-leave-active {
-  transition: opacity 0.3s, transform 0.4s;
+  transition: transform 0.4s;
+}
+.fade-scale-enter,
+.face-scale-leave-to {
+  transform: scale(0);
+}
+.fade-scale-enter-active,
+.fade-scale-leave-active {
+  transition: transform 0.7s;
 }
 .ct-create__align-center {
   text-align: center;

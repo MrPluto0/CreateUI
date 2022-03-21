@@ -20,11 +20,11 @@ export default {
     return {
       closed: false,
       content: "提示信息",
-      type: "success", //弹框的样式 success、warning、error
-      offset: 20, //弹框默认的偏移量
-      duration: 1000, //弹框消失的时间
-      timer: null, //准备一个定时器
-      closeFunc: null, //扩充一个功能 弹框消失后触发
+      type: "success",
+      offset: 20,
+      duration: 1000,
+      timer: null,
+      ended: null,
     };
   },
   mounted() {
@@ -38,8 +38,8 @@ export default {
     close() {
       this.closed = true;
       //当弹框消失时会调用this.onClose()该函数方法
-      if (typeof this.closeFunc === "function") {
-        this.closeFunc();
+      if (this.ended && typeof this.ended === "function") {
+        this.ended();
       }
     },
   },

@@ -32,6 +32,7 @@ export default function Loading(options = {}) {
   let parent = options.fullscreen ? document.body : options.target;
 
   Vue.nextTick(() => {
+    instance.fullscreen = !!options.fullscreen;
     instance.visible = true;
 
     if (parent.style.position === "") {

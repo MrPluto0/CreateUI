@@ -1,5 +1,5 @@
 <template>
-  <transition name="ct-scaleFade">
+  <transition name="fade-scale">
     <div
       v-show="visible"
       class="ct-loading"

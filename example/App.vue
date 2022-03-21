@@ -8,7 +8,7 @@
     ></ct-chatbox>
     <div
       style="height: 200px; width: 200px; background-color: skyblue"
-      v-loading="loading"
+      v-loading.fullscreen="loading"
     ></div>
     <ct-musicbox
       name="你的月亮"
@@ -48,19 +48,31 @@ export default {
         content: "successOK",
         type: "success",
         duration: 2000,
+        ended: () => {
+          alert("消失后的回调函数");
+        },
       });
     },
     modalTest() {
       this.$modal({
         content: "阿八八八八八嗷嗷",
         align: "indent",
-        success: () => {
+        confirm: () => {
           alert("OK");
+        },
+        cancel: () => {
+          alert("cancel");
         },
       });
     },
     loadingTest() {
-      this.loading = !this.loading;
+      // this.loading = !this.loading;
+      let instance = this.$loading({
+        fullscreen: true,
+      });
+      setTimeout(() => {
+        instance.close();
+      }, 2000);
     },
   },
 };

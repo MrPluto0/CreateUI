@@ -34,14 +34,17 @@ export default {
       title: "标题",
       content: "这是一段自定义内容",
       align: "center",
-      success: null,
+      confirm: null,
+      cancel: null,
     };
   },
   methods: {
     clickHandler(type) {
       this.isShow = false;
       if (type === "confirm") {
-        typeof this.success === "function" && this.success();
+        typeof this.confirm === "function" && this.confirm();
+      } else if (type === "cancel") {
+        typeof this.cancel === "function" && this.cancel();
       }
     },
   },
