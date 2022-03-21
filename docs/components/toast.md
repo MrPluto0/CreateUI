@@ -81,7 +81,7 @@ this.$toast({
   </template>
 </com-show>
 
-### 回调函数（待完成）
+### 回调函数
 
 <com-show>
 
@@ -89,7 +89,7 @@ this.$toast({
 this.$toast({
   content: "这是一个弹窗",
   type: "info",
-  closeFunc: () => {
+  ended: () => {
     alert("消失后的回调函数");
   },
 });
@@ -104,13 +104,13 @@ this.$toast({
 
 ### 属性
 
-| 参数      | 信息             |  默认   | 必需  |   类型   |
-| --------- | ---------------- | :-----: | :---: | :------: |
-| type      | 弹框类型         | success | true  |  Array   |
-| content   | 弹框文字         |   ——    | false |  String  |
-| duration  | 显示时延         |  1000   | false |  Number  |
-| offset    | 顶部偏移         |   20    | false |  Number  |
-| closeFunc | 消失后的回调函数 |   ——    | false | Function |
+| 参数     | 信息             |  默认   | 必需  |   类型   |
+| -------- | ---------------- | :-----: | :---: | :------: |
+| type     | 弹框类型         | success | true  |  Array   |
+| content  | 弹框文字         |   ——    | false |  String  |
+| duration | 显示时延         |  1000   | false |  Number  |
+| offset   | 顶部偏移         |   20    | false |  Number  |
+| ended    | 消失后的回调函数 |   ——    | false | Function |
 
 <script>
 export default {
@@ -142,8 +142,8 @@ export default {
       this.$toast({
         content:"这是一个弹窗",
         type:"info",
-        closeFunc: () => {
-          alert("消失后的回调函数");
+        ended: () => {
+          alert("回调函数");
         },
       });
     }

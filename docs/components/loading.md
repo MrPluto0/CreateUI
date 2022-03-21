@@ -195,9 +195,9 @@ setTimeout(()=>{
 export default {
   data() {
     return {
-      loading:true,
+      loading: false,
       loading2: false,
-      loading3: true,
+      loading3: false,
       options: {
         text:"加载文字",
         animeStyle: "moon",

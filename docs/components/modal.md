@@ -60,8 +60,11 @@ this.$modal({
 this.$modal({
   title: "提示",
   content: "这是一个模态对话框",
-  success: () => {
-    alert("回调函数");
+  confirm: () => {
+    alert("Confirm");
+  },
+  cancel: () => {
+    alert("Cancel");
   },
 });
 ```
@@ -80,7 +83,8 @@ this.$modal({
 | title   | 标题文字            |   ——   | true  |  String  |         ——          |
 | content | 弹框内容            |   ——   | false |  String  |         ——          |
 | align   | `content`的对齐方式 | center | false |  String  | center/indent/right |
-| success | `confirm`后回调函数 |   ——   | false | Function |         ——          |
+| confirm | 确认后回调函数      |   ——   | false | Function |         ——          |
+| cancel  | 取消后回调函数      |   ——   | false | Function |         ——          |
 
 <script>
 export default {
@@ -102,9 +106,12 @@ export default {
       this.$modal({
         title: "提示",
         content: "这是一个模态对话框",
-        success: ()=>{
-          alert("回调函数");
-        }
+        confirm: () => {
+          alert("Confirm");
+        },
+        cancel: () => {
+          alert("Cancel");
+        },
       });
     },
     test3(){},

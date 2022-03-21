@@ -23,6 +23,6 @@
     "vuepress": "^1.9.7"
   },
   "dependencies": {
-    "@gypsophlia/create-ui": "^1.1.4"
+    "@gypsophlia/create-ui": "^1.1.5"
   }
 }
