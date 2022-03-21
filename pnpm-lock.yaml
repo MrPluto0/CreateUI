@@ -1,13 +1,15 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@gypsophlia/create-ui': ^1.1.5
+  '@gypsophlia/create-ui': ^1.1.7
+  cross-env: ^7.0.3
   vuepress: ^1.9.7
 
 dependencies:
-  '@gypsophlia/create-ui': 1.1.5
+  '@gypsophlia/create-ui': 1.1.7
 
 devDependencies:
+  cross-env: mirrors.tencent.com/cross-env/7.0.3
   vuepress: 1.9.7
 
 packages:
@@ -1197,8 +1199,8 @@ packages:
       to-fast-properties: mirrors.tencent.com/to-fast-properties/2.0.0
     dev: true
 
-  /@gypsophlia/create-ui/1.1.5:
-    resolution: {integrity: sha512-Ig4W4e+o1q74Mqrtp+jsT0WBVwD9stZSMq7firAYcnDVFapp7DbhHZGmfmgJkgayc67UKl9DDtfSFSz6mU/vUw==}
+  /@gypsophlia/create-ui/1.1.7:
+    resolution: {integrity: sha512-g1s9G1Gi9wIr1b5YrHHk86pEoEb+K0AOWWzkAYH5wG+qgz6U+XOIblyB8zHMyEUTyHIXyFzVrlt6twpx2UtQ7A==}
     dev: false
 
   /@jridgewell/resolve-uri/3.0.5:
@@ -2260,14 +2262,6 @@ packages:
       - webpack-command
     dev: true
 
-  /watchpack-chokidar2/2.0.1:
-    resolution: {integrity: sha512-nCFfBIPKr5Sh61s4LPpy1Wtfi0HE8isJ3d2Yb5/Ppw2P2B/3eVSEBjKfN0fmHJSK14+31KwMKmcrzs2GM4P0Ww==}
-    requiresBuild: true
-    dependencies:
-      chokidar: mirrors.tencent.com/chokidar/2.1.8
-    dev: true
-    optional: true
-
   /webpack-chain/4.12.1:
     resolution: {integrity: sha512-BCfKo2YkDe2ByqkEWe1Rw+zko4LsyS75LVr29C6xIrxAg9JHJ4pl8kaIZ396SUSNp6b4815dRZPSTAS8LlURRQ==}
     dependencies:
@@ -2780,7 +2774,7 @@ packages:
     optional: true
 
   mirrors.tencent.com/bindings/1.5.0:
-    resolution: {integrity: sha512-p2q/t/mhvuOj/UeLlV6566GD/guowlr0hHxClI0W9m7MWYkL1F0hLo+0Aexs9HSPCtR1SXQ0TD3MMKrXZajbiQ==, registry: https://mirrors.cloud.tencent.com/npm/, tarball: https://mirrors.tencent.com/npm/bindings/-/bindings-1.5.0.tgz}
+    resolution: {integrity: sha512-p2q/t/mhvuOj/UeLlV6566GD/guowlr0hHxClI0W9m7MWYkL1F0hLo+0Aexs9HSPCtR1SXQ0TD3MMKrXZajbiQ==, registry: https://mirrors.cloud.tencent.com/npm/, tarball: http://mirrors.tencent.com/npm/bindings/-/bindings-1.5.0.tgz}
     name: bindings
     version: 1.5.0
     requiresBuild: true
@@ -3234,7 +3228,7 @@ packages:
     dev: true
 
   mirrors.tencent.com/chokidar/3.5.3:
-    resolution: {integrity: sha512-Dr3sfKRP6oTcjf2JmUmFJfeVMvXBdegxB0iVQ5eb2V10uFJUCAS8OByZdVAyVb8xXNz3GjjTgj9kLWsZTqE6kw==, registry: https://mirrors.cloud.tencent.com/npm/, tarball: https://mirrors.tencent.com/npm/chokidar/-/chokidar-3.5.3.tgz}
+    resolution: {integrity: sha512-Dr3sfKRP6oTcjf2JmUmFJfeVMvXBdegxB0iVQ5eb2V10uFJUCAS8OByZdVAyVb8xXNz3GjjTgj9kLWsZTqE6kw==, registry: https://mirrors.cloud.tencent.com/npm/, tarball: http://mirrors.tencent.com/npm/chokidar/-/chokidar-3.5.3.tgz}
     name: chokidar
     version: 3.5.3
     engines: {node: '>= 8.10.0'}
@@ -3666,6 +3660,16 @@ packages:
       sha.js: mirrors.tencent.com/sha.js/2.4.11
     dev: true
 
+  mirrors.tencent.com/cross-env/7.0.3:
+    resolution: {integrity: sha512-+/HKd6EgcQCJGh2PSjZuUitQBQynKor4wrFbRg4DtAgS1aWO+gU52xpH7M9ScGgXSYmAVS9bIJ8EzuaGw0oNAw==, registry: https://mirrors.cloud.tencent.com/npm/, tarball: http://mirrors.tencent.com/npm/cross-env/-/cross-env-7.0.3.tgz}
+    name: cross-env
+    version: 7.0.3
+    engines: {node: '>=10.14', npm: '>=6', yarn: '>=1'}
+    hasBin: true
+    dependencies:
+      cross-spawn: mirrors.tencent.com/cross-spawn/7.0.3
+    dev: true
+
   mirrors.tencent.com/cross-spawn/6.0.5:
     resolution: {integrity: sha512-eTVLrBSt7fjbDygz805pMnstIs2VTBNkRm0qxZd+M7A5XDdxVRWO5MxGBXZhjY4cqLYLdtrGqRf8mBPmzwSpWQ==, registry: https://mirrors.cloud.tencent.com/npm/, tarball: https://mirrors.tencent.com/npm/cross-spawn/-/cross-spawn-6.0.5.tgz}
     name: cross-spawn
@@ -3677,6 +3681,17 @@ packages:
       semver: mirrors.tencent.com/semver/5.7.1
       shebang-command: mirrors.tencent.com/shebang-command/1.2.0
       which: mirrors.tencent.com/which/1.3.1
+    dev: true
+
+  mirrors.tencent.com/cross-spawn/7.0.3:
+    resolution: {integrity: sha512-iRDPJKUPVEND7dHPO8rkbOnPpyDygcDFtWjpeWNCgy8WP2rXcxXL8TskReQl6OrB2G7+UJrags1q15Fudc7G6w==, registry: https://mirrors.cloud.tencent.com/npm/, tarball: http://mirrors.tencent.com/npm/cross-spawn/-/cross-spawn-7.0.3.tgz}
+    name: cross-spawn
+    version: 7.0.3
+    engines: {node: '>= 8'}
+    dependencies:
+      path-key: mirrors.tencent.com/path-key/3.1.1
+      shebang-command: mirrors.tencent.com/shebang-command/2.0.0
+      which: mirrors.tencent.com/which/2.0.2
     dev: true
 
   mirrors.tencent.com/crypto-browserify/3.12.0:
@@ -5168,7 +5183,7 @@ packages:
     dev: true
 
   mirrors.tencent.com/fsevents/1.2.13:
-    resolution: {integrity: sha512-oWb1Z6mkHIskLzEJ/XWX0srkpkTQ7vaopMQkyaEIoq0fmtFVxOthb8cCxeT+p3ynTdkk/RZwbgG4brR5BeWECw==, registry: https://mirrors.cloud.tencent.com/npm/, tarball: https://mirrors.tencent.com/npm/fsevents/-/fsevents-1.2.13.tgz}
+    resolution: {integrity: sha512-oWb1Z6mkHIskLzEJ/XWX0srkpkTQ7vaopMQkyaEIoq0fmtFVxOthb8cCxeT+p3ynTdkk/RZwbgG4brR5BeWECw==, registry: https://mirrors.cloud.tencent.com/npm/, tarball: http://mirrors.tencent.com/npm/fsevents/-/fsevents-1.2.13.tgz}
     name: fsevents
     version: 1.2.13
     engines: {node: '>= 4.0'}
@@ -5182,7 +5197,7 @@ packages:
     optional: true
 
   mirrors.tencent.com/fsevents/2.3.2:
-    resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==, registry: https://mirrors.cloud.tencent.com/npm/, tarball: https://mirrors.tencent.com/npm/fsevents/-/fsevents-2.3.2.tgz}
+    resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==, registry: https://mirrors.cloud.tencent.com/npm/, tarball: http://mirrors.tencent.com/npm/fsevents/-/fsevents-2.3.2.tgz}
     name: fsevents
     version: 2.3.2
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
@@ -6382,7 +6397,7 @@ packages:
     dev: true
 
   mirrors.tencent.com/isexe/2.0.0:
-    resolution: {integrity: sha1-6PvzdNxVb/iUehDcsFctYz8s+hA=, registry: https://mirrors.cloud.tencent.com/npm/, tarball: https://mirrors.tencent.com/npm/isexe/-/isexe-2.0.0.tgz}
+    resolution: {integrity: sha1-6PvzdNxVb/iUehDcsFctYz8s+hA=, registry: https://mirrors.cloud.tencent.com/npm/, tarball: http://mirrors.tencent.com/npm/isexe/-/isexe-2.0.0.tgz}
     name: isexe
     version: 2.0.0
     dev: true
@@ -7602,6 +7617,13 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
+  mirrors.tencent.com/path-key/3.1.1:
+    resolution: {integrity: sha512-ojmeN0qd+y0jszEtoY48r0Peq5dwMEkIlCOu6Q5f41lfkswXuKtYrhgoTpLnyIcHm24Uhqx+5Tqm2InSwLhE6Q==, registry: https://mirrors.cloud.tencent.com/npm/, tarball: http://mirrors.tencent.com/npm/path-key/-/path-key-3.1.1.tgz}
+    name: path-key
+    version: 3.1.1
+    engines: {node: '>=8'}
+    dev: true
+
   mirrors.tencent.com/path-parse/1.0.7:
     resolution: {integrity: sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==, registry: https://mirrors.cloud.tencent.com/npm/, tarball: https://mirrors.tencent.com/npm/path-parse/-/path-parse-1.0.7.tgz}
     name: path-parse
@@ -8154,7 +8176,7 @@ packages:
     dev: true
 
   mirrors.tencent.com/prettier/2.6.0:
-    resolution: {integrity: sha512-m2FgJibYrBGGgQXNzfd0PuDGShJgRavjUoRCw1mZERIWVSXF0iLzLm+aOqTAbLnC3n6JzUhAA8uZnFVghHJ86A==, registry: https://mirrors.cloud.tencent.com/npm/, tarball: https://mirrors.tencent.com/npm/prettier/-/prettier-2.6.0.tgz}
+    resolution: {integrity: sha512-m2FgJibYrBGGgQXNzfd0PuDGShJgRavjUoRCw1mZERIWVSXF0iLzLm+aOqTAbLnC3n6JzUhAA8uZnFVghHJ86A==, registry: https://mirrors.cloud.tencent.com/npm/, tarball: http://mirrors.tencent.com/npm/prettier/-/prettier-2.6.0.tgz}
     name: prettier
     version: 2.6.0
     engines: {node: '>=10.13.0'}
@@ -8926,11 +8948,27 @@ packages:
       shebang-regex: mirrors.tencent.com/shebang-regex/1.0.0
     dev: true
 
+  mirrors.tencent.com/shebang-command/2.0.0:
+    resolution: {integrity: sha512-kHxr2zZpYtdmrN1qDjrrX/Z1rR1kG8Dx+gkpK1G4eXmvXswmcE1hTWBWYUzlraYw1/yZp6YuDY77YtvbN0dmDA==, registry: https://mirrors.cloud.tencent.com/npm/, tarball: http://mirrors.tencent.com/npm/shebang-command/-/shebang-command-2.0.0.tgz}
+    name: shebang-command
+    version: 2.0.0
+    engines: {node: '>=8'}
+    dependencies:
+      shebang-regex: mirrors.tencent.com/shebang-regex/3.0.0
+    dev: true
+
   mirrors.tencent.com/shebang-regex/1.0.0:
-    resolution: {integrity: sha1-2kL0l0DAtC2yypcoVxyxkMmO/qM=, registry: https://mirrors.cloud.tencent.com/npm/, tarball: https://mirrors.tencent.com/npm/shebang-regex/-/shebang-regex-1.0.0.tgz}
+    resolution: {integrity: sha1-2kL0l0DAtC2yypcoVxyxkMmO/qM=, registry: https://mirrors.cloud.tencent.com/npm/, tarball: http://mirrors.tencent.com/npm/shebang-regex/-/shebang-regex-1.0.0.tgz}
     name: shebang-regex
     version: 1.0.0
     engines: {node: '>=0.10.0'}
+    dev: true
+
+  mirrors.tencent.com/shebang-regex/3.0.0:
+    resolution: {integrity: sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==, registry: https://mirrors.cloud.tencent.com/npm/, tarball: http://mirrors.tencent.com/npm/shebang-regex/-/shebang-regex-3.0.0.tgz}
+    name: shebang-regex
+    version: 3.0.0
+    engines: {node: '>=8'}
     dev: true
 
   mirrors.tencent.com/side-channel/1.0.4:
@@ -10004,6 +10042,16 @@ packages:
     version: 2.6.14
     dev: true
 
+  mirrors.tencent.com/watchpack-chokidar2/2.0.1:
+    resolution: {integrity: sha512-nCFfBIPKr5Sh61s4LPpy1Wtfi0HE8isJ3d2Yb5/Ppw2P2B/3eVSEBjKfN0fmHJSK14+31KwMKmcrzs2GM4P0Ww==, registry: https://mirrors.cloud.tencent.com/npm/, tarball: https://mirrors.tencent.com/npm/watchpack-chokidar2/-/watchpack-chokidar2-2.0.1.tgz}
+    name: watchpack-chokidar2
+    version: 2.0.1
+    requiresBuild: true
+    dependencies:
+      chokidar: mirrors.tencent.com/chokidar/2.1.8
+    dev: true
+    optional: true
+
   mirrors.tencent.com/watchpack/1.7.5:
     resolution: {integrity: sha512-9P3MWk6SrKjHsGkLT2KHXdQ/9SNkyoJbabxnKOoJepsvJjJG8uYTR3yTPxPQvNDI3w4Nz1xnE0TLHK4RIVe/MQ==, registry: https://mirrors.cloud.tencent.com/npm/, tarball: https://mirrors.tencent.com/npm/watchpack/-/watchpack-1.7.5.tgz}
     name: watchpack
@@ -10013,7 +10061,7 @@ packages:
       neo-async: mirrors.tencent.com/neo-async/2.6.2
     optionalDependencies:
       chokidar: mirrors.tencent.com/chokidar/3.5.3
-      watchpack-chokidar2: 2.0.1
+      watchpack-chokidar2: mirrors.tencent.com/watchpack-chokidar2/2.0.1
     dev: true
 
   mirrors.tencent.com/wbuf/1.7.3:
@@ -10198,6 +10246,16 @@ packages:
     resolution: {integrity: sha512-HxJdYWq1MTIQbJ3nw0cqssHoTNU267KlrDuGZ1WYlxDStUtKUhOaJmh112/TZmHxxUfuJqPXSOm7tDyas0OSIQ==, registry: https://mirrors.cloud.tencent.com/npm/, tarball: https://mirrors.tencent.com/npm/which/-/which-1.3.1.tgz}
     name: which
     version: 1.3.1
+    hasBin: true
+    dependencies:
+      isexe: mirrors.tencent.com/isexe/2.0.0
+    dev: true
+
+  mirrors.tencent.com/which/2.0.2:
+    resolution: {integrity: sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==, registry: https://mirrors.cloud.tencent.com/npm/, tarball: http://mirrors.tencent.com/npm/which/-/which-2.0.2.tgz}
+    name: which
+    version: 2.0.2
+    engines: {node: '>= 8'}
     hasBin: true
     dependencies:
       isexe: mirrors.tencent.com/isexe/2.0.0

@@ -20,9 +20,10 @@
   },
   "homepage": "https://github.com/MrPluto0/CreateUI#readme",
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "vuepress": "^1.9.7"
   },
   "dependencies": {
-    "@gypsophlia/create-ui": "^1.1.5"
+    "@gypsophlia/create-ui": "^1.1.7"
   }
 }

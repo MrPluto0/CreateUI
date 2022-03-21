@@ -16,6 +16,20 @@ export const siteData = {
   ],
   "pages": [
     {
+      "frontmatter": {},
+      "regularPath": "/components/",
+      "relativePath": "components/README.md",
+      "key": "v-c2f985d2",
+      "path": "/components/",
+      "headers": [
+        {
+          "level": 2,
+          "title": "组件列表",
+          "slug": "组件列表"
+        }
+      ]
+    },
+    {
       "title": "Home",
       "frontmatter": {
         "home": true,
@@ -44,16 +58,114 @@ export const siteData = {
       "path": "/"
     },
     {
-      "frontmatter": {},
-      "regularPath": "/components/",
-      "relativePath": "components/README.md",
-      "key": "v-c2f985d2",
-      "path": "/components/",
+      "title": "畅聊气泡",
+      "frontmatter": {
+        "tags": [
+          "聊天",
+          "chat",
+          "bubble"
+        ]
+      },
+      "regularPath": "/components/chatbox.html",
+      "relativePath": "components/chatbox.md",
+      "key": "v-046fcccc",
+      "path": "/components/chatbox.html",
       "headers": [
         {
           "level": 2,
-          "title": "组件列表",
-          "slug": "组件列表"
+          "title": "基础用法",
+          "slug": "基础用法"
+        },
+        {
+          "level": 2,
+          "title": "高级用法",
+          "slug": "高级用法"
+        },
+        {
+          "level": 3,
+          "title": "昵称",
+          "slug": "昵称"
+        },
+        {
+          "level": 3,
+          "title": "头像",
+          "slug": "头像"
+        },
+        {
+          "level": 3,
+          "title": "时间戳",
+          "slug": "时间戳"
+        },
+        {
+          "level": 3,
+          "title": "背景颜色",
+          "slug": "背景颜色"
+        },
+        {
+          "level": 3,
+          "title": "连续消息",
+          "slug": "连续消息"
+        },
+        {
+          "level": 3,
+          "title": "气泡宽度",
+          "slug": "气泡宽度"
+        },
+        {
+          "level": 2,
+          "title": "配置项",
+          "slug": "配置项"
+        },
+        {
+          "level": 3,
+          "title": "属性",
+          "slug": "属性"
+        }
+      ]
+    },
+    {
+      "title": "模态对话框",
+      "frontmatter": {
+        "tags": [
+          "弹框",
+          "提示框",
+          "dialog"
+        ]
+      },
+      "regularPath": "/components/modal.html",
+      "relativePath": "components/modal.md",
+      "key": "v-269cebd8",
+      "path": "/components/modal.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "基础用法",
+          "slug": "基础用法"
+        },
+        {
+          "level": 2,
+          "title": "高级用法",
+          "slug": "高级用法"
+        },
+        {
+          "level": 3,
+          "title": "对齐方式",
+          "slug": "对齐方式"
+        },
+        {
+          "level": 3,
+          "title": "回调函数",
+          "slug": "回调函数"
+        },
+        {
+          "level": 2,
+          "title": "配置",
+          "slug": "配置"
+        },
+        {
+          "level": 3,
+          "title": "属性",
+          "slug": "属性"
         }
       ]
     },
@@ -170,100 +282,6 @@ export const siteData = {
       ]
     },
     {
-      "title": "畅聊气泡",
-      "frontmatter": {
-        "tags": [
-          "聊天",
-          "chat",
-          "bubble"
-        ]
-      },
-      "regularPath": "/components/chatbox.html",
-      "relativePath": "components/chatbox.md",
-      "key": "v-046fcccc",
-      "path": "/components/chatbox.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "基础用法",
-          "slug": "基础用法"
-        },
-        {
-          "level": 2,
-          "title": "高级用法",
-          "slug": "高级用法"
-        },
-        {
-          "level": 3,
-          "title": "昵称",
-          "slug": "昵称"
-        },
-        {
-          "level": 3,
-          "title": "头像",
-          "slug": "头像"
-        },
-        {
-          "level": 3,
-          "title": "时间戳",
-          "slug": "时间戳"
-        },
-        {
-          "level": 3,
-          "title": "背景颜色",
-          "slug": "背景颜色"
-        },
-        {
-          "level": 3,
-          "title": "连续消息",
-          "slug": "连续消息"
-        },
-        {
-          "level": 3,
-          "title": "气泡宽度",
-          "slug": "气泡宽度"
-        },
-        {
-          "level": 2,
-          "title": "配置项",
-          "slug": "配置项"
-        },
-        {
-          "level": 3,
-          "title": "属性",
-          "slug": "属性"
-        }
-      ]
-    },
-    {
-      "title": "Home",
-      "frontmatter": {
-        "home": true,
-        "heroImage": "/logo.png",
-        "actionText": "Start !",
-        "actionLink": "/en/guide/",
-        "features": [
-          {
-            "title": "Personality",
-            "details": "This is a personality and creative lib."
-          },
-          {
-            "title": "Vue Driven",
-            "details": "Based on Vue2 and support import by Global or Demand."
-          },
-          {
-            "title": "Small",
-            "details": "Configure by webpack, it has small volume."
-          }
-        ],
-        "footer": "MIT Licensed | Copyright © 2018-present Evan You"
-      },
-      "regularPath": "/en/",
-      "relativePath": "en/README.md",
-      "key": "v-3a5b6792",
-      "path": "/en/"
-    },
-    {
       "title": "Intro",
       "frontmatter": {},
       "regularPath": "/en/components/",
@@ -275,173 +293,6 @@ export const siteData = {
           "level": 2,
           "title": "Components",
           "slug": "components"
-        }
-      ]
-    },
-    {
-      "title": "加载动画",
-      "frontmatter": {
-        "tags": [
-          "加载",
-          "load"
-        ]
-      },
-      "regularPath": "/en/components/loading.html",
-      "relativePath": "en/components/loading.md",
-      "key": "v-5f8e55a7",
-      "path": "/en/components/loading.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "基本用法",
-          "slug": "基本用法"
-        },
-        {
-          "level": 2,
-          "title": "高级用法",
-          "slug": "高级用法"
-        },
-        {
-          "level": 3,
-          "title": "全屏加载",
-          "slug": "全屏加载"
-        },
-        {
-          "level": 3,
-          "title": "配置选项",
-          "slug": "配置选项"
-        },
-        {
-          "level": 3,
-          "title": "加载控制",
-          "slug": "加载控制"
-        },
-        {
-          "level": 2,
-          "title": "配置",
-          "slug": "配置"
-        },
-        {
-          "level": 3,
-          "title": "属性",
-          "slug": "属性"
-        },
-        {
-          "level": 3,
-          "title": "函数",
-          "slug": "函数"
-        }
-      ]
-    },
-    {
-      "title": "Chatting Bubble",
-      "frontmatter": {
-        "tags": [
-          "聊天",
-          "chat",
-          "bubble"
-        ]
-      },
-      "regularPath": "/en/components/chatbox.html",
-      "relativePath": "en/components/chatbox.md",
-      "key": "v-3530a5c7",
-      "path": "/en/components/chatbox.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "Basic Usage",
-          "slug": "basic-usage"
-        },
-        {
-          "level": 2,
-          "title": "Adanced Usage",
-          "slug": "adanced-usage"
-        },
-        {
-          "level": 3,
-          "title": "Nickname",
-          "slug": "nickname"
-        },
-        {
-          "level": 3,
-          "title": "Avatar",
-          "slug": "avatar"
-        },
-        {
-          "level": 3,
-          "title": "TimeStamp",
-          "slug": "timestamp"
-        },
-        {
-          "level": 3,
-          "title": "Background Color",
-          "slug": "background-color"
-        },
-        {
-          "level": 3,
-          "title": "Successive Msgs",
-          "slug": "successive-msgs"
-        },
-        {
-          "level": 3,
-          "title": "Bubble width",
-          "slug": "bubble-width"
-        },
-        {
-          "level": 2,
-          "title": "Configure",
-          "slug": "configure"
-        },
-        {
-          "level": 3,
-          "title": "Attributes",
-          "slug": "attributes"
-        }
-      ]
-    },
-    {
-      "title": "模态对话框",
-      "frontmatter": {
-        "tags": [
-          "弹框",
-          "提示框",
-          "dialog"
-        ]
-      },
-      "regularPath": "/components/modal.html",
-      "relativePath": "components/modal.md",
-      "key": "v-269cebd8",
-      "path": "/components/modal.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "基础用法",
-          "slug": "基础用法"
-        },
-        {
-          "level": 2,
-          "title": "高级用法",
-          "slug": "高级用法"
-        },
-        {
-          "level": 3,
-          "title": "对齐方式",
-          "slug": "对齐方式"
-        },
-        {
-          "level": 3,
-          "title": "回调函数",
-          "slug": "回调函数"
-        },
-        {
-          "level": 2,
-          "title": "配置",
-          "slug": "配置"
-        },
-        {
-          "level": 3,
-          "title": "属性",
-          "slug": "属性"
         }
       ]
     },
@@ -523,6 +374,100 @@ export const siteData = {
       ]
     },
     {
+      "title": "Chatting Bubble",
+      "frontmatter": {
+        "tags": [
+          "聊天",
+          "chat",
+          "bubble"
+        ]
+      },
+      "regularPath": "/en/components/chatbox.html",
+      "relativePath": "en/components/chatbox.md",
+      "key": "v-3530a5c7",
+      "path": "/en/components/chatbox.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "Basic Usage",
+          "slug": "basic-usage"
+        },
+        {
+          "level": 2,
+          "title": "Adanced Usage",
+          "slug": "adanced-usage"
+        },
+        {
+          "level": 3,
+          "title": "Nickname",
+          "slug": "nickname"
+        },
+        {
+          "level": 3,
+          "title": "Avatar",
+          "slug": "avatar"
+        },
+        {
+          "level": 3,
+          "title": "TimeStamp",
+          "slug": "timestamp"
+        },
+        {
+          "level": 3,
+          "title": "Background Color",
+          "slug": "background-color"
+        },
+        {
+          "level": 3,
+          "title": "Successive Msgs",
+          "slug": "successive-msgs"
+        },
+        {
+          "level": 3,
+          "title": "Bubble width",
+          "slug": "bubble-width"
+        },
+        {
+          "level": 2,
+          "title": "Configure",
+          "slug": "configure"
+        },
+        {
+          "level": 3,
+          "title": "Attributes",
+          "slug": "attributes"
+        }
+      ]
+    },
+    {
+      "title": "Home",
+      "frontmatter": {
+        "home": true,
+        "heroImage": "/logo.png",
+        "actionText": "Start !",
+        "actionLink": "/en/guide/",
+        "features": [
+          {
+            "title": "Personality",
+            "details": "This is a personality and creative lib."
+          },
+          {
+            "title": "Vue Driven",
+            "details": "Based on Vue2 and support import by Global or Demand."
+          },
+          {
+            "title": "Small",
+            "details": "Configure by webpack, it has small volume."
+          }
+        ],
+        "footer": "MIT Licensed | Copyright © 2018-present Evan You"
+      },
+      "regularPath": "/en/",
+      "relativePath": "en/README.md",
+      "key": "v-3a5b6792",
+      "path": "/en/"
+    },
+    {
       "title": "八音盒",
       "frontmatter": {
         "tags": [
@@ -600,6 +545,61 @@ export const siteData = {
       ]
     },
     {
+      "title": "加载动画",
+      "frontmatter": {
+        "tags": [
+          "加载",
+          "load"
+        ]
+      },
+      "regularPath": "/en/components/loading.html",
+      "relativePath": "en/components/loading.md",
+      "key": "v-5f8e55a7",
+      "path": "/en/components/loading.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "基本用法",
+          "slug": "基本用法"
+        },
+        {
+          "level": 2,
+          "title": "高级用法",
+          "slug": "高级用法"
+        },
+        {
+          "level": 3,
+          "title": "全屏加载",
+          "slug": "全屏加载"
+        },
+        {
+          "level": 3,
+          "title": "配置选项",
+          "slug": "配置选项"
+        },
+        {
+          "level": 3,
+          "title": "加载控制",
+          "slug": "加载控制"
+        },
+        {
+          "level": 2,
+          "title": "配置",
+          "slug": "配置"
+        },
+        {
+          "level": 3,
+          "title": "属性",
+          "slug": "属性"
+        },
+        {
+          "level": 3,
+          "title": "函数",
+          "slug": "函数"
+        }
+      ]
+    },
+    {
       "title": "模态对话框",
       "frontmatter": {
         "tags": [
@@ -642,48 +642,6 @@ export const siteData = {
           "level": 3,
           "title": "属性",
           "slug": "属性"
-        }
-      ]
-    },
-    {
-      "title": "Guide",
-      "frontmatter": {
-        "sidebar": "auto"
-      },
-      "regularPath": "/en/guide/",
-      "relativePath": "en/guide/README.md",
-      "key": "v-4ca31fec",
-      "path": "/en/guide/",
-      "headers": [
-        {
-          "level": 2,
-          "title": "Feature",
-          "slug": "feature"
-        },
-        {
-          "level": 2,
-          "title": "Install",
-          "slug": "install"
-        },
-        {
-          "level": 2,
-          "title": "Usage",
-          "slug": "usage"
-        },
-        {
-          "level": 3,
-          "title": "Global import",
-          "slug": "global-import"
-        },
-        {
-          "level": 3,
-          "title": "Demand import",
-          "slug": "demand-import"
-        },
-        {
-          "level": 2,
-          "title": "Configure",
-          "slug": "configure"
         }
       ]
     },
@@ -741,6 +699,48 @@ export const siteData = {
           "level": 3,
           "title": "属性",
           "slug": "属性"
+        }
+      ]
+    },
+    {
+      "title": "Guide",
+      "frontmatter": {
+        "sidebar": "auto"
+      },
+      "regularPath": "/en/guide/",
+      "relativePath": "en/guide/README.md",
+      "key": "v-4ca31fec",
+      "path": "/en/guide/",
+      "headers": [
+        {
+          "level": 2,
+          "title": "Feature",
+          "slug": "feature"
+        },
+        {
+          "level": 2,
+          "title": "Install",
+          "slug": "install"
+        },
+        {
+          "level": 2,
+          "title": "Usage",
+          "slug": "usage"
+        },
+        {
+          "level": 3,
+          "title": "Global import",
+          "slug": "global-import"
+        },
+        {
+          "level": 3,
+          "title": "Demand import",
+          "slug": "demand-import"
+        },
+        {
+          "level": 2,
+          "title": "Configure",
+          "slug": "configure"
         }
       ]
     },
