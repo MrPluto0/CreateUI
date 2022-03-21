@@ -58,13 +58,6 @@ export const siteData = {
       ]
     },
     {
-      "frontmatter": {},
-      "regularPath": "/components/loading.html",
-      "relativePath": "components/loading.md",
-      "key": "v-7a31fd8c",
-      "path": "/components/loading.html"
-    },
-    {
       "title": "畅聊气泡",
       "frontmatter": {
         "tags": [
@@ -131,18 +124,59 @@ export const siteData = {
       ]
     },
     {
-      "frontmatter": {},
-      "regularPath": "/components/toast.html",
-      "relativePath": "components/toast.md",
-      "key": "v-a8d46338",
-      "path": "/components/toast.html"
-    },
-    {
-      "frontmatter": {},
-      "regularPath": "/components/modal.html",
-      "relativePath": "components/modal.md",
-      "key": "v-269cebd8",
-      "path": "/components/modal.html"
+      "title": "加载动画",
+      "frontmatter": {
+        "tags": [
+          "加载",
+          "load"
+        ]
+      },
+      "regularPath": "/components/loading.html",
+      "relativePath": "components/loading.md",
+      "key": "v-7a31fd8c",
+      "path": "/components/loading.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "基本用法",
+          "slug": "基本用法"
+        },
+        {
+          "level": 2,
+          "title": "高级用法",
+          "slug": "高级用法"
+        },
+        {
+          "level": 3,
+          "title": "全屏加载",
+          "slug": "全屏加载"
+        },
+        {
+          "level": 3,
+          "title": "配置选项",
+          "slug": "配置选项"
+        },
+        {
+          "level": 3,
+          "title": "加载控制",
+          "slug": "加载控制"
+        },
+        {
+          "level": 2,
+          "title": "配置",
+          "slug": "配置"
+        },
+        {
+          "level": 3,
+          "title": "属性",
+          "slug": "属性"
+        },
+        {
+          "level": 3,
+          "title": "函数",
+          "slug": "函数"
+        }
+      ]
     },
     {
       "title": "八音盒",
@@ -222,6 +256,52 @@ export const siteData = {
       ]
     },
     {
+      "title": "模态对话框",
+      "frontmatter": {
+        "tags": [
+          "弹框",
+          "提示框",
+          "dialog"
+        ]
+      },
+      "regularPath": "/components/modal.html",
+      "relativePath": "components/modal.md",
+      "key": "v-269cebd8",
+      "path": "/components/modal.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "基础用法",
+          "slug": "基础用法"
+        },
+        {
+          "level": 2,
+          "title": "高级用法",
+          "slug": "高级用法"
+        },
+        {
+          "level": 3,
+          "title": "对齐方式",
+          "slug": "对齐方式"
+        },
+        {
+          "level": 3,
+          "title": "回调函数",
+          "slug": "回调函数"
+        },
+        {
+          "level": 2,
+          "title": "配置",
+          "slug": "配置"
+        },
+        {
+          "level": 3,
+          "title": "属性",
+          "slug": "属性"
+        }
+      ]
+    },
+    {
       "title": "Home",
       "frontmatter": {
         "home": true,
@@ -250,6 +330,7 @@ export const siteData = {
       "path": "/en/"
     },
     {
+      "title": "Intro",
       "frontmatter": {},
       "regularPath": "/en/components/",
       "relativePath": "en/components/README.md",
@@ -264,14 +345,7 @@ export const siteData = {
       ]
     },
     {
-      "frontmatter": {},
-      "regularPath": "/en/components/modal.html",
-      "relativePath": "en/components/modal.md",
-      "key": "v-334788f2",
-      "path": "/en/components/modal.html"
-    },
-    {
-      "title": "畅聊气泡",
+      "title": "Chatting Bubble",
       "frontmatter": {
         "tags": [
           "聊天",
@@ -286,6 +360,73 @@ export const siteData = {
       "headers": [
         {
           "level": 2,
+          "title": "Basic Usage",
+          "slug": "basic-usage"
+        },
+        {
+          "level": 2,
+          "title": "Adanced Usage",
+          "slug": "adanced-usage"
+        },
+        {
+          "level": 3,
+          "title": "Nickname",
+          "slug": "nickname"
+        },
+        {
+          "level": 3,
+          "title": "Avatar",
+          "slug": "avatar"
+        },
+        {
+          "level": 3,
+          "title": "TimeStamp",
+          "slug": "timestamp"
+        },
+        {
+          "level": 3,
+          "title": "Background Color",
+          "slug": "background-color"
+        },
+        {
+          "level": 3,
+          "title": "Successive Msgs",
+          "slug": "successive-msgs"
+        },
+        {
+          "level": 3,
+          "title": "Bubble width",
+          "slug": "bubble-width"
+        },
+        {
+          "level": 2,
+          "title": "Configure",
+          "slug": "configure"
+        },
+        {
+          "level": 3,
+          "title": "Attributes",
+          "slug": "attributes"
+        }
+      ]
+    },
+    {
+      "title": "消息提示框",
+      "frontmatter": {
+        "tags": [
+          "通知",
+          "提醒",
+          "message",
+          "remind"
+        ]
+      },
+      "regularPath": "/components/toast.html",
+      "relativePath": "components/toast.md",
+      "key": "v-a8d46338",
+      "path": "/components/toast.html",
+      "headers": [
+        {
+          "level": 2,
           "title": "基础用法",
           "slug": "基础用法"
         },
@@ -296,38 +437,28 @@ export const siteData = {
         },
         {
           "level": 3,
-          "title": "昵称",
-          "slug": "昵称"
+          "title": "提示类型",
+          "slug": "提示类型"
         },
         {
           "level": 3,
-          "title": "头像",
-          "slug": "头像"
+          "title": "延迟时间",
+          "slug": "延迟时间"
         },
         {
           "level": 3,
-          "title": "时间戳",
-          "slug": "时间戳"
+          "title": "顶部偏移",
+          "slug": "顶部偏移"
         },
         {
           "level": 3,
-          "title": "背景颜色",
-          "slug": "背景颜色"
-        },
-        {
-          "level": 3,
-          "title": "连续消息",
-          "slug": "连续消息"
-        },
-        {
-          "level": 3,
-          "title": "气泡宽度",
-          "slug": "气泡宽度"
+          "title": "回调函数（待完成）",
+          "slug": "回调函数-待完成"
         },
         {
           "level": 2,
-          "title": "配置项",
-          "slug": "配置项"
+          "title": "配置",
+          "slug": "配置"
         },
         {
           "level": 3,
@@ -342,6 +473,13 @@ export const siteData = {
       "relativePath": "en/components/loading.md",
       "key": "v-5f8e55a7",
       "path": "/en/components/loading.html"
+    },
+    {
+      "frontmatter": {},
+      "regularPath": "/en/components/toast.html",
+      "relativePath": "en/components/toast.md",
+      "key": "v-a93e8672",
+      "path": "/en/components/toast.html"
     },
     {
       "title": "八音盒",
@@ -422,52 +560,10 @@ export const siteData = {
     },
     {
       "frontmatter": {},
-      "regularPath": "/en/components/toast.html",
-      "relativePath": "en/components/toast.md",
-      "key": "v-a93e8672",
-      "path": "/en/components/toast.html"
-    },
-    {
-      "title": "Guide",
-      "frontmatter": {
-        "sidebar": "auto"
-      },
-      "regularPath": "/en/guide/",
-      "relativePath": "en/guide/README.md",
-      "key": "v-4ca31fec",
-      "path": "/en/guide/",
-      "headers": [
-        {
-          "level": 2,
-          "title": "Feature",
-          "slug": "feature"
-        },
-        {
-          "level": 2,
-          "title": "Install",
-          "slug": "install"
-        },
-        {
-          "level": 2,
-          "title": "Usage",
-          "slug": "usage"
-        },
-        {
-          "level": 3,
-          "title": "Global import",
-          "slug": "global-import"
-        },
-        {
-          "level": 3,
-          "title": "Demand import",
-          "slug": "demand-import"
-        },
-        {
-          "level": 2,
-          "title": "Configure",
-          "slug": "configure"
-        }
-      ]
+      "regularPath": "/en/components/modal.html",
+      "relativePath": "en/components/modal.md",
+      "key": "v-334788f2",
+      "path": "/en/components/modal.html"
     },
     {
       "title": "指南",
@@ -508,6 +604,48 @@ export const siteData = {
           "level": 2,
           "title": "配置",
           "slug": "配置"
+        }
+      ]
+    },
+    {
+      "title": "Guide",
+      "frontmatter": {
+        "sidebar": "auto"
+      },
+      "regularPath": "/en/guide/",
+      "relativePath": "en/guide/README.md",
+      "key": "v-4ca31fec",
+      "path": "/en/guide/",
+      "headers": [
+        {
+          "level": 2,
+          "title": "Feature",
+          "slug": "feature"
+        },
+        {
+          "level": 2,
+          "title": "Install",
+          "slug": "install"
+        },
+        {
+          "level": 2,
+          "title": "Usage",
+          "slug": "usage"
+        },
+        {
+          "level": 3,
+          "title": "Global import",
+          "slug": "global-import"
+        },
+        {
+          "level": 3,
+          "title": "Demand import",
+          "slug": "demand-import"
+        },
+        {
+          "level": 2,
+          "title": "Configure",
+          "slug": "configure"
         }
       ]
     }
@@ -579,19 +717,47 @@ export const siteData = {
             "text": "Components",
             "link": "/en/components/"
           }
-        ]
+        ],
+        "sidebar": {
+          "/en/components/": [
+            [
+              "",
+              "Intro"
+            ],
+            {
+              "title": "Chatting Bubble",
+              "path": "chatbox"
+            },
+            {
+              "title": "Loading Anime",
+              "path": "loading"
+            },
+            {
+              "title": "Message Box",
+              "path": "toast"
+            },
+            {
+              "title": "Dialog Box",
+              "path": "modal"
+            },
+            {
+              "title": "Music Box",
+              "path": "musicbox"
+            }
+          ]
+        }
       }
     }
   },
   "locales": {
     "/": {
       "lang": "zh-CN",
-      "description": "你的专属个性组件库",
+      "description": "一个专属个性组件库",
       "path": "/"
     },
     "/en/": {
       "lang": "en-US",
-      "description": "Vue-powered Static Site Generator",
+      "description": "A personalized components lib.",
       "path": "/en/"
     }
   }

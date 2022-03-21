@@ -49,17 +49,42 @@ module.exports = {
           { text: "Guide", link: "/en/guide/" },
           { text: "Components", link: "/en/components/" },
         ],
+        sidebar: {
+          "/en/components/": [
+            ["", "Intro"],
+            {
+              title: "Chatting Bubble",
+              path: "chatbox",
+            },
+            {
+              title: "Loading Anime",
+              path: "loading",
+            },
+            {
+              title: "Message Box",
+              path: "toast",
+            },
+            {
+              title: "Dialog Box",
+              path: "modal",
+            },
+            {
+              title: "Music Box",
+              path: "musicbox",
+            },
+          ],
+        },
       },
     },
   },
   locales: {
     "/": {
       lang: "zh-CN", // 将会被设置为 <html> 的 lang 属性
-      description: "你的专属个性组件库",
+      description: "一个专属个性组件库",
     },
     "/en/": {
       lang: "en-US",
-      description: "Vue-powered Static Site Generator",
+      description: "A personalized components lib.",
     },
   },
 };

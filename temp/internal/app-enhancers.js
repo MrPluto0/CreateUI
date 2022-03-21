@@ -1,7 +1,7 @@
 import m0 from "C:\\Users\\86189\\Desktop\\Temp\\npm\\create-ui\\temp\\app-enhancers\\0.js"
 import m1 from "C:\\Users\\86189\\Desktop\\Temp\\npm\\create-ui\\temp\\app-enhancers\\1.js"
 import m2 from "C:\\Users\\86189\\Desktop\\Temp\\npm\\create-ui\\temp\\app-enhancers\\data-block.js"
-import m3 from "C:\\Users\\86189\\Desktop\\Temp\\npm\\create-ui\\temp\\app-enhancers\\global-components-16.js"
+import m3 from "C:\\Users\\86189\\Desktop\\Temp\\npm\\create-ui\\temp\\app-enhancers\\global-components-36.js"
 import m4 from "C:\\Users\\86189\\Desktop\\Temp\\npm\\create-ui\\temp\\app-enhancers\\2.js"
 
 export default [

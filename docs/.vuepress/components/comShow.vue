@@ -72,7 +72,7 @@ export default {
   cursor: pointer;
 }
 .btn.active {
-  color: #63b488;
+  color: #5659e8;
 }
 .fade-left-enter,
 .fade-left-leave-to {

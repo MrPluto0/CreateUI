@@ -8,7 +8,7 @@ tags:
 
 # 八音盒
 
-::: tip 创意来源
+::: tip 来源
 完成个人博客时定制背景音乐的播放组件。
 :::
 
@@ -30,7 +30,15 @@ tags:
     </ct-musicbox>
   ```
   <template v-slot:show>
-    <examples-musicbox color="#5659e8"></examples-musicbox>
+    <div class="musicbox">
+      <ct-musicbox
+        :src="src"
+        name="明月星辰可见否"
+        v-model="isPlay"
+        color="#5659e8"
+      >
+      </ct-musicbox>
+    </div>
   </template>
 </com-show>
 
@@ -51,7 +59,14 @@ tags:
     </ct-musicbox>
   ```
   <template v-slot:show>
-    <examples-musicbox color="#b42b51"></examples-musicbox>
+    <div class="musicbox">
+      <ct-musicbox
+        :src="src"
+        name="明月星辰可见否"
+        v-model="isPlay1"
+      >
+      </ct-musicbox>
+    </div>
   </template>
 </com-show>
 
@@ -70,7 +85,16 @@ tags:
     </ct-musicbox>
   ```
   <template v-slot:show>
-    <examples-musicbox color="#5659e8" bgColor="#cadeea"></examples-musicbox>
+    <div class="musicbox">
+      <ct-musicbox
+        :src="src"
+        name="明月星辰可见否"
+        v-model="isPlay2"
+        color="#5659e8"
+        bgColor="#cadeea"
+      >
+      </ct-musicbox>
+    </div>
   </template>
 </com-show>
 
@@ -89,7 +113,16 @@ tags:
     </ct-musicbox>
   ```
   <template v-slot:show>
-    <examples-musicbox color="#5659e8" width="150"></examples-musicbox>
+    <div class="musicbox">
+      <ct-musicbox
+        :src="src"
+        name="明月星辰可见否"
+        v-model="isPlay3"
+        color="#5659e8"
+        width="150"
+      >
+      </ct-musicbox>
+    </div>
   </template>
 </com-show>
 
@@ -113,7 +146,16 @@ tags:
     </ct-musicbox>
   ```
   <template v-slot:show>
-    <examples-musicbox color="#5659e8" refer="audioRef"></examples-musicbox>
+    <div class="musicbox">
+      <ct-musicbox
+        :src="src"
+        name="明月星辰可见否"
+        v-model="isPlay4"
+        refer="audioRef"
+        color="#5659e8"
+      >
+      </ct-musicbox>
+    </div>
   </template>
 </com-show>
 
@@ -183,3 +225,25 @@ this.$refs.audioboxRef.getAudioAnalyser();
 | ---------------- | --------------------------- |
 | getAudioCtx      | 获取 Audio 上下文           |
 | getAudioAnalyser | 获取 Audio Api 创建的分析器 |
+
+<script>
+export default {
+  data() {
+    return {
+      src: "https://link.hhtjim.com/163/517346741.mp3",
+      isPlay: false,
+      isPlay1: false,
+      isPlay2: false,
+      isPlay3: false,
+      isPlay4: false,
+    };
+  },
+};
+</script>
+<style scoped>
+.musicbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+</style>

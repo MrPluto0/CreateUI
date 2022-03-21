@@ -7,7 +7,7 @@ tags:
 
 # 畅聊气泡
 
-::: tip 创意来源
+::: tip 来源
 `Quasar`的聊天组件：[chat](http://www.quasarchs.com/vue-components/chat)
 :::
 
@@ -19,11 +19,9 @@ tags:
 
 <com-show>
   ```html
-  <com-show>
-    <ct-chatbox :text="['早上好']"></ct-chatbox>
-    <ct-chatbox sent :text="['早上好呀']"></ct-chatbox>
-    <ct-chatbox :text="['祝你这一天过的愉快]"></ct-chatbox>
-  </com-show>
+  <ct-chatbox :text="['早上好']"></ct-chatbox>
+  <ct-chatbox sent :text="['早上好呀']"></ct-chatbox>
+  <ct-chatbox :text="['祝你这一天过的愉快]"></ct-chatbox>
   ```
   <template v-slot:show>
     <ct-chatbox :text="['早上好']"></ct-chatbox>

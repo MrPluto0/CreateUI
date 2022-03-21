@@ -33,14 +33,6 @@ export const routes = [
     redirect: "/components/"
   },
   {
-    name: "v-7a31fd8c",
-    path: "/components/loading.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-7a31fd8c").then(next)
-    },
-  },
-  {
     name: "v-046fcccc",
     path: "/components/chatbox.html",
     component: GlobalLayout,
@@ -49,19 +41,11 @@ export const routes = [
     },
   },
   {
-    name: "v-a8d46338",
-    path: "/components/toast.html",
+    name: "v-7a31fd8c",
+    path: "/components/loading.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-a8d46338").then(next)
-    },
-  },
-  {
-    name: "v-269cebd8",
-    path: "/components/modal.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-269cebd8").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-7a31fd8c").then(next)
     },
   },
   {
@@ -70,6 +54,14 @@ export const routes = [
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
       ensureAsyncComponentsLoaded("Layout", "v-6da8d8b4").then(next)
+    },
+  },
+  {
+    name: "v-269cebd8",
+    path: "/components/modal.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-269cebd8").then(next)
     },
   },
   {
@@ -97,19 +89,19 @@ export const routes = [
     redirect: "/en/components/"
   },
   {
-    name: "v-334788f2",
-    path: "/en/components/modal.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-334788f2").then(next)
-    },
-  },
-  {
     name: "v-3530a5c7",
     path: "/en/components/chatbox.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
       ensureAsyncComponentsLoaded("Layout", "v-3530a5c7").then(next)
+    },
+  },
+  {
+    name: "v-a8d46338",
+    path: "/components/toast.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-a8d46338").then(next)
     },
   },
   {
@@ -121,14 +113,6 @@ export const routes = [
     },
   },
   {
-    name: "v-79ba92fe",
-    path: "/en/components/musicbox.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-79ba92fe").then(next)
-    },
-  },
-  {
     name: "v-a93e8672",
     path: "/en/components/toast.html",
     component: GlobalLayout,
@@ -137,16 +121,20 @@ export const routes = [
     },
   },
   {
-    name: "v-4ca31fec",
-    path: "/en/guide/",
+    name: "v-79ba92fe",
+    path: "/en/components/musicbox.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-4ca31fec").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-79ba92fe").then(next)
     },
   },
   {
-    path: "/en/guide/index.html",
-    redirect: "/en/guide/"
+    name: "v-334788f2",
+    path: "/en/components/modal.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-334788f2").then(next)
+    },
   },
   {
     name: "v-3d6af587",
@@ -159,6 +147,18 @@ export const routes = [
   {
     path: "/guide/index.html",
     redirect: "/guide/"
+  },
+  {
+    name: "v-4ca31fec",
+    path: "/en/guide/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-4ca31fec").then(next)
+    },
+  },
+  {
+    path: "/en/guide/index.html",
+    redirect: "/en/guide/"
   },
   {
     path: '*',
