@@ -1,2 +1,2 @@
-import "C:\\Users\\86189\\Desktop\\Temp\\npm\\create-ui\\node_modules\\.pnpm\\@vuepress+core@1.9.7\\node_modules\\@vuepress\\core\\lib\\node\\internal-plugins\\style\\client.js"
+import "D:\\Projects\\CreateUI\\node_modules\\.pnpm\\@vuepress+core@1.9.10_@vue+_3151c16cb7b489bf8a8dfb573f259955\\node_modules\\@vuepress\\core\\lib\\node\\internal-plugins\\style\\client.js"
 export default {}
